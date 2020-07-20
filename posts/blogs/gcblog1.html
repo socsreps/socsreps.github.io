@@ -22,6 +22,17 @@
       <a href="../../feedback.html" class="w3-bar-item w3-button">Feedback</a>
       <a href="../../index.html#about" class="w3-bar-item w3-button">Contact Us</a>
     </div>
+
+<!-- Burger menu on Small Screens - only shows when screen gets less than 600px-->
+  <button class="dropbtn" onclick="myFunction()">MENU</button>
+    <div class="dropdown-content" id="myDropdown">
+      <div class="w3-right">
+      <a href="../../blog.html" class="w3-bar-item w3-button">Blog</a>
+      <a href="../../feedback.html" class="w3-bar-item w3-button">Feedback</a>
+      <a href="../../index.html#about" class="w3-bar-item w3-button">Contact Us</a>
+      </div>
+    </div>
+
   </div>
 </div>
 
@@ -75,4 +86,26 @@
 </footer>
 
 </body>
+
+<script type="text/javascript">
+  
+
+// Enables the burger menu button and populates it with the links 
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+
+
+
+</script>
 

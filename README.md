@@ -32,16 +32,12 @@ The 2nd element is creating the blog itself. Each individual blog is a completel
  - If you are also creating a full blog page then also update the href tag
  - When you are finished save the file
 
-<p align="center"><img src="assets/card.gif"></p>
-
 **STEP 2 - Create The Blog**
 
 - In the 'posts' folder there is a 'blogs' folder. Open this.
 - Duplicate a previous blog such as gcblog1.html and rename
 - Open your new blog and your text and images. Again, remember to update the href tag for image links
 - When you are finished save the file
-
-<p align="center"><img src="assets/card.gif"></p>
 
 **STEP 3 - Add the card to the main blog page**
 
@@ -52,9 +48,7 @@ The 2nd element is creating the blog itself. Each individual blog is a completel
 - Add your entry to the top of this list
 - The order of this list dictates the order of the blogs on the blog page, so newer entries should go to the top.
 
-<p align="center"><img src="assets/card.gif"></p>
-
-Thats it! Now just make the appropriate pull requests to get the site updated!
+You're all done. Now just make the appropriate pull requests to get the site updated!
 
 ## How to Contribute
 

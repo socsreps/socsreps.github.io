@@ -16,11 +16,11 @@ Feedback is provided via Google Forms. We have used Google Forms so we have some
 
 ## How to add a new Blog
 
-Blogs are created in 2 separate spaces. The is done first by creating a 'card'. This card populates the main 'Blogs' page. The card acts as an overview of the blog itself. See image below:
+Blogs are created in 2 separate spaces. The is done first by creating a 'card'. This card populates the main 'Blogs' page. The card acts as an overview of the blog itself. Theese cards help guide users through all the available blogs on the site. See image below:
 
-![picture](assets/card.png)
+![picture](assets/card.gif)
 
-
+The 2nd element is creating the blog itself. The blog is a completely separate webpage itself which allows for a longer form of blog. If you only wanted to create a card then that is no problem. There is no requirement for a dedicated page if you don't want one. 
 
 
 

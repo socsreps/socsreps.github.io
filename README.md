@@ -22,7 +22,7 @@ Blogs are created in 2 separate spaces. The is done first by creating a 'card'. 
 
 
 <p align="center">
-  <img width="100%" height="3100%" src="assets/card.gif">
+  <img width="100%" height="100%" src="assets/card.gif">
 </p>
 
 

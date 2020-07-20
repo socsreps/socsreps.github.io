@@ -16,7 +16,7 @@ Feedback is provided via Google Forms. We have used Google Forms so we have some
 
 ## How to add a new Blog
 
-Blogs are created in 2 separate spaces. The is done first by creating a 'card'. This card populates the main 'Blogs' page. The card acts as an overview of the blog itself. Theese cards help guide users through all the available blogs on the site. See image below:
+Blogs are created in 2 separate spaces. The is done first by creating a 'card'. This card populates the main 'Blogs' page. The card acts as an overview of the blog itself. These cards help guide users through all the available blogs on the site. 
 
 <p align="center"><img src="assets/card.gif"></p>
 
@@ -24,19 +24,37 @@ The 2nd element is creating the blog itself. Each individual blog is a completel
 
 1. STEP 1 - Create your card
 
-Navigate from your root folder to > posts
+ - Navigate from your root folder to > posts
+ - Duplicate a previous post such as gcpost1.html and rename
+ - Open your new post and update the title, date and author name
+ - Write a brief description of the blog
+ - If you are using an image on your card then update the image source tag
+ - If you are also creating a full blog page then also update the href tag
+ - When you are finished save the file
 
-###Example
- - Item 1
- - Item 2
-  - Sub Item 1
-  - Sub Item 2
+<p align="center"><img src="assets/card.gif"></p>
 
+1. STEP 2 - Create The Blog
 
-<p align="center"><img src="assets/cardLayout.png"></p>
+- In the 'posts' folder there is a 'blogs' folder. Open this.
+- Duplicate a previous blog such as gcblog1.html and rename
+- Open your new blog and your text and images. Again, remember to update the href tag for image links
+- When you are finished save the file
 
+<p align="center"><img src="assets/card.gif"></p>
 
+1. STEP 3 - Add the card to the main blog page
 
+- Navigate to the main root folder of the project
+- Here, you will see a file called 'blog.html'. Open it in your text editor of choice
+- Under the section called 'posts' you will see a list, 
+- Copy one of the list entries and amend the 'data-include' tag to your blog post name (this should be the dame name as your blogpost html page in Step 2)
+- Add your entry to the top of this list
+- The order of this list dictates the order of the blogs on the blog page, so newer entries should go to the top.
+
+<p align="center"><img src="assets/card.gif"></p>
+
+Thats it! Now just make the appropriate pull requests to get the site updated!
 
 ## How to Contribute
 

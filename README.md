@@ -22,7 +22,7 @@ Blogs are created in 2 separate spaces. The is done first by creating a 'card'. 
 
 The 2nd element is creating the blog itself. Each individual blog is a completely separate webpage which allows for a longer form of writing. If you only want to create a card, because that covers everything then, then that is no problem. There is no requirement for a dedicated page if you don't want one! 
 
-###STEP 1 - Create your card
+**STEP 1 - Create your card**
 
  - Navigate from your root folder to > posts
  - Duplicate a previous post such as gcpost1.html and rename
@@ -34,7 +34,7 @@ The 2nd element is creating the blog itself. Each individual blog is a completel
 
 <p align="center"><img src="assets/card.gif"></p>
 
-###STEP 2 - Create The Blog
+**STEP 2 - Create The Blog**
 
 - In the 'posts' folder there is a 'blogs' folder. Open this.
 - Duplicate a previous blog such as gcblog1.html and rename
@@ -43,7 +43,7 @@ The 2nd element is creating the blog itself. Each individual blog is a completel
 
 <p align="center"><img src="assets/card.gif"></p>
 
-###STEP 3 - Add the card to the main blog page
+**STEP 3 - Add the card to the main blog page**
 
 - Navigate to the main root folder of the project
 - Here, you will see a file called 'blog.html'. Open it in your text editor of choice

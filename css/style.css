@@ -179,11 +179,6 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-text-white,.w3-hover-text-white:hover{color:#fff!important}
 .w3-text-light-grey,.w3-hover-text-light-grey:hover,.w3-text-light-gray,.w3-hover-text-light-gray:hover{color:#f1f1f1!important}
 
-/* Center Image & Text */
-.image {
-  border-radius: 5px;
-  padding-top: 20px;
-}
 
 .center {
   display: block;

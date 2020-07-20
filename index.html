@@ -10,15 +10,27 @@
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-    <a href="#home" class="w3-bar-item w3-button"><b>SoCS </b> SU REPS</a>
+    <a href="index.html" class="w3-bar-item w3-button"><b>SoCS </b> SU REPS</a>
     <!-- Float links to the right. Hide them on small screens -->
     <div class="w3-right w3-hide-small">
       <a href="blog.html" class="w3-bar-item w3-button">Blog</a>
       <a href="feedback.html" class="w3-bar-item w3-button">Feedback</a>
-      <a href="#about" class="w3-bar-item w3-button">Contact Us</a>
+      <a href="index.html#about" class="w3-bar-item w3-button">Contact Us</a>
     </div>
+
+<!-- Burger menu on Small Screens - only shows when screen gets less than 600px-->
+  <button class="dropbtn" onclick="myFunction()">MENU</button>
+    <div class="dropdown-content" id="myDropdown">
+      <div class="w3-right">
+        <a href="blog.html" class="w3-bar-item w3-button">Blog</a>
+        <a href="feedback.html" class="w3-bar-item w3-button">Feedback</a>
+        <a href="index.html#about" class="w3-bar-item w3-button">Contact Us</a>
+      </div>
+    </div>
+
   </div>
 </div>
+
 
 <!-- Header -->
 <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
@@ -68,7 +80,7 @@
       <img src="assets/placeholder.png" class="center" alt="Mike" style="width:50%">
       <h3>Zuzanna Walaszczyk</h3>
       <p class="w3-opacity">Course Rep - Yr2</p>
-      <p>BSc(Hons) Computer Science</p>
+      <p>BSc(Hons) Games Computing</p>
       <p>Year of study: Year 2</p>
       <a href="mailto:someone@example.com" class="w3-button w3-light-grey w3-block">Send Email</a>
     </div>
@@ -89,7 +101,7 @@
       <a href="mailto:someone@example.com" class="w3-button w3-light-grey w3-block">Send Email</a>
     </div>
   </div>
-
+s
 
   <!-- How the team fits together Section -->
   <div class="w3-container w3-padding-32" id="about">
@@ -112,3 +124,20 @@
 </body>
 </html>
 
+<script type="text/javascript">
+
+// Enables the burger menu button and populates it with the links 
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>

@@ -20,6 +20,12 @@ Blogs are created in 2 separate spaces. The is done first by creating a 'card'. 
 
 ![picture](assets/card.gif)
 
+
+<p align="center">
+  <img width="100%" height="3100%" src="assets/card.gif">
+</p>
+
+
 The 2nd element is creating the blog itself. The blog is a completely separate webpage itself which allows for a longer form of blog. If you only wanted to create a card then that is no problem. There is no requirement for a dedicated page if you don't want one. 
 
 

@@ -255,7 +255,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   width: 100%;
   border: 2px solid white;
   text-align: left;
-  font-size: 15px;
+  font-size: 1.5vw;
 }
 
 .active, .collapsible:hover {

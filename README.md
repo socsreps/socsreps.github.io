@@ -26,11 +26,11 @@ Each individual blog is a completely separate webpage which allows for a longer 
 
 To make it as easy as possible to create a post or a blog please name your files the same name as the post. Please also use Camel Case and the naming convention as shown below:
 
-Post: 	>myFirst30DaysAsSocsSchoolRep_POST.html
+-myFirst30DaysAsSocsSchoolRep_POST.html
 
-Blog: 	>myFirst30DaysAsSocsSchoolRep_BLOG.html
+-myFirst30DaysAsSocsSchoolRep_BLOG.html
 
-Images:	>myFirst30DaysAsSocsSchoolRep_IMAGE1.html (then IMAGE2 .. and so on)
+-myFirst30DaysAsSocsSchoolRep_IMAGE1.html (then IMAGE2 .. and so on)
 
 
 **STEP 1 - Create your Post**

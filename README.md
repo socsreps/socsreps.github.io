@@ -24,9 +24,13 @@ Each individual blog is a completely separate webpage which allows for a longer 
 
 **Naming Convention**
 
-To make it as easy as possible to create a post or a blog please use the below naming convetion:
+To make it as easy as possible to create a post or a blog please use Camel Case and the below naming convention:
 
-[title][_post].html
+Post: 	myFirst30DaysAsSocsSchoolRep_POST.html
+
+Blog: 	myFirst30DaysAsSocsSchoolRep_BLOG.html
+
+Images:	myFirst30DaysAsSocsSchoolRep_IMAGE1.html (then IMAGE2 .. and so on)
 
 
 **STEP 1 - Create your Post**
@@ -57,7 +61,7 @@ To make it as easy as possible to create a post or a blog please use the below n
 
 You're all done. Now just make the appropriate pull requests to get the site updated!
 
-## How to Contribute
+## How to Contribute to the GitHub Repo
 
 Contributing to the website is easy and we encourage all persons who are interested to raise any issues and make pull requests. 
 

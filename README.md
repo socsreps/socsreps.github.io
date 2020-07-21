@@ -22,15 +22,15 @@ There are 2 types of content available to be created. These are 'Posts' and 'Blo
 
 Each individual blog is a completely separate webpage which allows for a longer form of writing. If you only want to create a post because that covers everything then then that is no problem. There is no requirement for a dedicated blog if you don't want one or if a post is good enough. 
 
-**NAMING COVENTION**
+**NAMING COVENTIONS**
 
 To make it as easy as possible to create a post or a blog please name your files the same name as the post. Please also use Camel Case and the naming convention as shown below:
 
-For a post use: myFirst30DaysAsSocsSchoolRep_POST.html
+**Post** myFirst30DaysAsSocsSchoolRep_POST.html
 
-For a blog use: myFirst30DaysAsSocsSchoolRep_BLOG.html
+**Blog** use: myFirst30DaysAsSocsSchoolRep_BLOG.html
 
-For an image use: myFirst30DaysAsSocsSchoolRep_IMAGE1.html (then IMAGE2 .. and so on)
+**Image** myFirst30DaysAsSocsSchoolRep_IMAGE1.html (then IMAGE2 .. and so on)
 
 ## How to create a new Post or Blog
 

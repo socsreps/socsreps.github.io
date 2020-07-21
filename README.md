@@ -24,7 +24,7 @@ Each individual blog is a completely separate webpage which allows for a longer 
 
 **Naming Convention**
 
-To make it as easy as possible to create a post or a blog please use Camel Case and the below naming convention:
+To make it as easy as possible to create a post or a blog please name your files the same name as the post. Please also use Camel Case and the below naming convention:
 
 Post: 	myFirst30DaysAsSocsSchoolRep_POST.html
 

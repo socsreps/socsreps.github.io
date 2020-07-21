@@ -14,7 +14,7 @@ This project hopefully provides a very easy way to start your journey on open so
 
 Feedback is provided via Google Forms. We have used Google Forms so we have some way to collate feedback without requiring a user to provide any details at all - i.e. all feedback is completely anonymous. As the school and course reps we are then able to review the comments and provide the most constructive feedback to the school. Google Forms works well for this because it provides a feedback results dashboard. However, please note that all Google Form responses and results are viewable by anyone with a '@lincolnsu.com' email address. With this in mind please do not use any names, identifiable or personal details in the feedback.  
 
-## How to add a new Post or Blog
+## Post or a Blog
 
 There are 2 types of content available to be created. These are 'Posts' and 'Blogs'. A post is a short form article and consists of around 1 x paragraph of text and possibly an image. This is presented in the style of a 'card' on the main blog page. A blog is a longer form article and compliments a Post. You can use a Post to link through to the respective blog. A Blog consist of several paragraphs of text and perhaps multiple images/gifs/videos etc. A post is best used when only something short is required and a blog is bets when you want to add more detail. Below shows what the main Blog page looks like with posts:
 
@@ -22,16 +22,17 @@ There are 2 types of content available to be created. These are 'Posts' and 'Blo
 
 Each individual blog is a completely separate webpage which allows for a longer form of writing. If you only want to create a post because that covers everything then then that is no problem. There is no requirement for a dedicated blog if you don't want one or if a post is good enough. 
 
-**Naming Convention**
+**NAMING COVENTION**
 
 To make it as easy as possible to create a post or a blog please name your files the same name as the post. Please also use Camel Case and the naming convention as shown below:
 
--myFirst30DaysAsSocsSchoolRep_POST.html
+For a post use: myFirst30DaysAsSocsSchoolRep_POST.html
 
--myFirst30DaysAsSocsSchoolRep_BLOG.html
+For a blog use: myFirst30DaysAsSocsSchoolRep_BLOG.html
 
--myFirst30DaysAsSocsSchoolRep_IMAGE1.html (then IMAGE2 .. and so on)
+For an image use: myFirst30DaysAsSocsSchoolRep_IMAGE1.html (then IMAGE2 .. and so on)
 
+## How to create a new Post or Blog
 
 **STEP 1 - Create your Post**
 

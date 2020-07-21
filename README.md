@@ -14,15 +14,22 @@ This project hopefully provides a very easy way to start your journey on open so
 
 Feedback is provided via Google Forms. We have used Google Forms so we have some way to collate feedback without requiring a user to provide any details at all - i.e. all feedback is completely anonymous. As the school and course reps we are then able to review the comments and provide the most constructive feedback to the school. Google Forms works well for this because it provides a feedback results dashboard. However, please note that all Google Form responses and results are viewable by anyone with a '@lincolnsu.com' email address. With this in mind please do not use any names, identifiable or personal details in the feedback.  
 
-## How to add a new Blog
+## How to add a new Post or Blog
 
-Blogs are created in 2 separate spaces. The is done first by creating a 'card'. This card populates the main 'Blogs' page. The card acts as an overview of the blog itself. These cards help guide users through all the available blogs on the site. 
+There are 2 types of content available to be created. These are 'Posts' and 'Blogs'. A post is a short form article and consists of around 1 x paragraph of text and possibly an image. This is presented in the style of a 'card' on the main blog page. A blog is a longer form article and compliments a Post. You can use a Post to link through to the respective blog. A Blog consist of several paragraphs of text and perhaps multiple images/gifs/videos etc. A post is best used when only something short is required and a blog is bets when you want to add more detail. Below shows what the main Blog page looks like with posts:
 
 <p align="center"><img src="assets/card.gif"></p>
 
-The 2nd element is creating the blog itself. Each individual blog is a completely separate webpage which allows for a longer form of writing. If you only want to create a card, because that covers everything then, then that is no problem. There is no requirement for a dedicated page if you don't want one! 
+Each individual blog is a completely separate webpage which allows for a longer form of writing. If you only want to create a post because that covers everything then then that is no problem. There is no requirement for a dedicated blog if you don't want one or if a post is good enough. 
 
-**STEP 1 - Create your card**
+**Naming Convention**
+
+To make it as easy as possible to create a post or a blog please use the below naming convetion:
+
+[title][_post].html
+
+
+**STEP 1 - Create your Post**
 
  - Navigate from your root folder to > posts
  - Duplicate a previous post such as gcpost1.html and rename
@@ -39,7 +46,7 @@ The 2nd element is creating the blog itself. Each individual blog is a completel
 - Open your new blog and your text and images. Again, remember to update the href tag for image links
 - When you are finished save the file
 
-**STEP 3 - Add the card to the main blog page**
+**STEP 3 - Add the Post to the main Blog page**
 
 - Navigate to the main root folder of the project
 - Here, you will see a file called 'blog.html'. Open it in your text editor of choice

@@ -58,6 +58,15 @@ body {
    margin-right: 40px;
 }
 
+/* Add a card effect for articles */
+.faq {
+   background-color: white;
+   border-radius: 5px;
+   padding: 30px;
+   margin-top: 20px;
+   margin-left: 20px;
+   margin-right: 20px;
+}
 
 
 /* Footer */

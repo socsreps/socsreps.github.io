@@ -244,3 +244,41 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
+
+
+/* Callaspsible boxes for FAQ page */
+.collapsible {
+  background-color: #D3D3D3;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: 2px solid white;
+  text-align: left;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+  color: white;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}

@@ -34,15 +34,24 @@ To make it as easy as possible to create a post or a blog please name all your f
 
 This will help separate out content from the website in general and if any images are lost it is easy to find which ones they are.
 
+**Note on Image Sizes**
+
+To make the formatting of the website as simple as possible there are 2 image sizes used. 
+
+About Us Images: 	400px x 400px
+Post Images: 		900px x 700px
+
+Where possible please try to use these sizes as it helps keep the posts about the same size as well as working more evenly across screen sizes.
+
 ## How to create a new Post or Blog
 
 **STEP 1 - Create your Post**
 
  - Navigate from your root folder to > posts
  - Duplicate a previous post such as 'myFirst30DaysAsSocsSchoolRep_POST.html' and rename
- - Open your new post and update the title, date and author name
+ - Open your new post and update the title, date, author name and post 'id'
  - Write a brief description of the blog
- - If you are using an image on your card then update the image source tag
+ - If you are using an image in your post then update the image source tag
  - If you are also creating a full blog page then also update the href tag
  - When you are finished save the file
  - If you want to create a corresponding blog then go to Step 2. If not, then go to Step 3

@@ -38,8 +38,8 @@ This will help separate out content from the website in general and if any image
 
 To make the formatting of the website as simple as possible there are 2 image sizes used. 
 
-About Us Images: 	400px x 400px
-Post Images: 		900px x 700px
+- About Us Images: 	400px x 400px
+- Post Images: 		900px x 700px
 
 Where possible please try to use these sizes as it helps keep the posts about the same size as well as working more evenly across screen sizes.
 

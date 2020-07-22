@@ -77,7 +77,7 @@ Where possible please try to use these sizes as it helps keep the posts about th
 
 You're all done. Now just make the appropriate pull requests to get the site updated!
 
-## How to Contribute to the GitHub Repo
+## How to Contribute
 
 Contributing to the website is easy and we encourage anyone who is interested to make pull requests. 
 

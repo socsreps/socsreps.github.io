@@ -22,7 +22,7 @@ There are 2 types of content available to be created. These are 'Posts' and 'Blo
 
 Each individual blog is a completely separate web page which allows for a longer form of writing. If you only want to create a post because that covers everything then then that is no problem. There is no requirement for a dedicated blog page if you don't want one or if a post is good enough. 
 
-**NAMING CONVENTIONS**
+**NAMING CONVENTIONS:**
 
 To make it as easy as possible to create a post or a blog please name all your files the same name as the post. Please also use Camel Case and the naming convention as shown below:
 
@@ -34,7 +34,7 @@ To make it as easy as possible to create a post or a blog please name all your f
 
 This will help separate out content from the website in general and if any images are lost it is easy to find which ones they are.
 
-**Note on Image Sizes**
+**NOTES ON IMAGE SIZES:**
 
 To make the formatting of the website as simple as possible there are 2 image sizes used. 
 

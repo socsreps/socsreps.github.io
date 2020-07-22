@@ -20,9 +20,9 @@ There are 2 types of content available to be created. These are 'Posts' and 'Blo
 
 <p align="center"><img src="assets/blogpage.gif"></p>
 
-Each individual blog is a completely separate webpage which allows for a longer form of writing. If you only want to create a post because that covers everything then then that is no problem. There is no requirement for a dedicated blog page if you don't want one or if a post is good enough. 
+Each individual blog is a completely separate web page which allows for a longer form of writing. If you only want to create a post because that covers everything then then that is no problem. There is no requirement for a dedicated blog page if you don't want one or if a post is good enough. 
 
-**NAMING COVENTIONS**
+**NAMING CONVENTIONS**
 
 To make it as easy as possible to create a post or a blog please name all your files the same name as the post. Please also use Camel Case and the naming convention as shown below:
 

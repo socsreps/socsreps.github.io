@@ -14,19 +14,13 @@ This project hopefully provides a very easy way to start your journey on open so
 
 Feedback is provided via Google Forms. We have used Google Forms so we have some way to collate feedback without requiring a user to provide any details at all - i.e. all feedback is completely anonymous. As the school and course reps we are then able to review the comments and provide the most constructive feedback to the school. Google Forms works well for this because it provides a feedback results dashboard. However, please note that all Google Form responses and results are viewable by anyone with a '@lincolnsu.com' email address. With this in mind please do not use any names, identifiable or personal details in the feedback.  
 
-## Post or a Blog
+## Blog
 
-There are 2 types of content available to be created. These are 'Posts' and 'Blogs'. A post is a short form article and consists of around 1 x paragraph of text and possibly an image. This is presented in the style of a 'card' on the main blog page. A blog is a longer form article and compliments a Post. You can use a Post to link through to the respective blog. A Blog consist of several paragraphs of text and perhaps multiple images/gifs/videos etc. A post is best used when only something short is required and a blog is best when you want to add more detail. Below shows what the main Blog page looks like with posts:
-
-<p align="center"><img src="assets/blogpage.gif"></p>
-
-Each individual blog is a completely separate web page which allows for a longer form of writing. If you only want to create a post because that covers everything then then that is no problem. There is no requirement for a dedicated blog page if you don't want one or if a post is good enough. 
+There are 2 types of content available to be created. These are 'Posts' and 'Blogs'. A post is a small card on the main blog page that links directly to the blog article. Each individual blog is a completely separate web page which allows for a longer form of writing.The posts are separated into months so they are easier to navigate as more blogs are developed. A blog is a longer form article and is linked directly from a post. A Blog consist of several paragraphs of text and perhaps multiple images/gifs/videos etc but can be as long as you want. There is no word minimum or maximum. Images are always good though!
 
 **NAMING CONVENTIONS:**
 
-To make it as easy as possible to create a post or a blog please name all your files the same name as the post. Please also use Camel Case and the naming convention as shown below:
-
-**Post:**   myFirst30DaysAsSocsSchoolRep_POST.html
+To make it as easy as possible to create a blog please name all your associated files such as images the same name as the blog itself. Please also use Camel Case and the naming convention as shown below:
 
 **Blog:**   myFirst30DaysAsSocsSchoolRep_BLOG.html
 
@@ -42,7 +36,7 @@ To make the formatting of the website as simple as possible there are 2 image si
 
 **Post Images:** 		900px x 700px
 
-Where possible please try to use these sizes as it helps keep the posts about the same size as well as working more evenly across screen sizes.
+Where possible please try to use these sizes as it helps keep the posts on the main blog page the same size as well as working more evenly across screen sizes.
 
 ## How to create a new Post or Blog
 
@@ -57,25 +51,28 @@ Where possible please try to use these sizes as it helps keep the posts about th
  - When you are finished save the file
  - If you want to create a corresponding blog then go to Step 2. If not, then go to Step 3
 
-**STEP 2 - Create The Blog**
+**STEP 1 - Create The Blog**
 
+- Navigate from your root folder to > posts
 - In the 'posts' folder there is a 'blogs' folder. Open this.
 - Duplicate a previous blog such as 'myFirst30DaysAsSocsSchoolRep_BLOG.html' and rename
-- If you are adding Images please use the 'assets' folder to hold them
+- If you are adding Images please use the 'assets' folder that is in the 'posts folder' to hold them
 - Open your new blog and update with your new text, images, videos etc. Again, remember to update the href tag for any image links
 - When you are finished save the file
-- Go to Step 3
 
-**STEP 3 - Add the Post to the main Blog page**
+**STEP 2 - Add the Post to the main Blog page**
 
 - Navigate to the main root folder of the project
 - Here, you will see a file called 'blog.html'. Open it in your text editor of choice
-- Under the section called 'posts' you will see a list 
-- Copy one of the list entries and amend the 'data-include' tag to your blog post name (this should be the same name as your blogpost html page in Step 1)
-- Add your entry to the top of this list
-- The order of this list dictates the order of the posts on the blog page, so newer entries should go to the top
+- Under the section called '[month] blogs' (where month is the current month such as 'July Blogs') you will see a list of previous blog posts
+- Copy a whole Div section of a single respective post and paste it at the top of the main month section
 
-You're all done. Now just make the appropriate pull requests to get the site updated!
+<p align="center"><img src="assets/blogsection.gif"></p>
+
+- Rename the title of the post, the href for the image link and also the source link for the linked blog article itself
+- The order of the entries in the month section dictates the order of the posts on the blog page, so newer entries should go to the top
+
+You're all done. If you do have any issues please check the file names as 95% of the problems is due to a simple misspelling etc. Now just make the appropriate pull requests to get the site updated! 9
 
 ## How to Contribute
 

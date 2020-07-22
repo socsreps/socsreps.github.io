@@ -38,18 +38,7 @@ To make the formatting of the website as simple as possible there are 2 image si
 
 Where possible please try to use these sizes as it helps keep the posts on the main blog page the same size as well as working more evenly across screen sizes.
 
-## How to create a new Post or Blog
-
-**STEP 1 - Create your Post**
-
- - Navigate from your root folder to > posts
- - Duplicate a previous post such as 'myFirst30DaysAsSocsSchoolRep_POST.html' and rename
- - Open your new post and update the title, date, author name and post 'id'
- - Write a brief description of the blog
- - If you are using an image in your post then update the image source tag
- - If you are also creating a full blog page then also update the href tag
- - When you are finished save the file
- - If you want to create a corresponding blog then go to Step 2. If not, then go to Step 3
+## How to create a new Blog
 
 **STEP 1 - Create The Blog**
 
@@ -60,14 +49,14 @@ Where possible please try to use these sizes as it helps keep the posts on the m
 - Open your new blog and update with your new text, images, videos etc. Again, remember to update the href tag for any image links
 - When you are finished save the file
 
-**STEP 2 - Add the Post to the main Blog page**
+**STEP 2 - Add the new blog to the main Blog page**
 
 - Navigate to the main root folder of the project
 - Here, you will see a file called 'blog.html'. Open it in your text editor of choice
 - Under the section called '[month] blogs' (where month is the current month such as 'July Blogs') you will see a list of previous blog posts
 - Copy a whole Div section of a single respective post and paste it at the top of the main month section
 
-<p align="center"><img src="assets/blogsection.gif"></p>
+<p align="center"><img src="assets/blogsection.png"></p>
 
 - Rename the title of the post, the href for the image link and also the source link for the linked blog article itself
 - The order of the entries in the month section dictates the order of the posts on the blog page, so newer entries should go to the top

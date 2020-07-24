@@ -234,8 +234,8 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 
 /* Dropdown Button */
 .dropbtn {
-  background-color: black;
-  color: white;
+  background-color: #f1f1f1;
+  color: black;
   padding: 10px;
   font-size: 14px;
   border: none;

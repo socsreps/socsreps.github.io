@@ -248,9 +248,11 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   position: absolute;
   background-color: #f1f1f1;
   min-width: 160px;
-  font-size: 12px;
-
 }
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:inline-block;}
+
 
 /* Links inside the dropdown */
 .dropdown-content a {
@@ -262,10 +264,6 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {background-color: #ddd}
-
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {display:block;}
-
 
 /* Callaspsible boxes for FAQ page */
 .collapsible {

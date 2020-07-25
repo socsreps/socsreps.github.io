@@ -79,7 +79,9 @@ The general process of contributing on GitHub is widely documented however the o
 
 1. Now make an edit to the index.html file and then refresh your browser to see the edit take effect
 
+## Acknowledgments
 
+Thanks to Dinke and Callum for the great feedback on the UX of the site which greatly improved the design. 
 
 
 

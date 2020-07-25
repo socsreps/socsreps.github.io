@@ -48,11 +48,14 @@ body {
   height: auto;
 }
 
-/* Add a card effect for articles */
+/* Add a card effect for articles as well as all styles in the blogs*/
 .card {
    background-color: white;
    border-radius: 5px;
-   padding: 40px;
+   padding-top: 50px;
+   padding-bottom: 50px;
+   padding-left: 150px;
+   padding-right: 150px;
    margin-left: 40px;
    margin-right: 40px;
    margin-bottom: 40px;

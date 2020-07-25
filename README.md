@@ -16,7 +16,7 @@ Feedback is provided via Google Forms. We have used Google Forms so we have some
 
 ## Blog Overview
 
-There are 2 types of content available to be created. These are 'Posts' and 'Blogs'. A post is a small card on the main blog page that links directly to the blog article. Each individual blog is a completely separate web page which allows for a longer form of writing.The posts are separated into months so they are easier to navigate as more blogs are developed. A blog is a longer form article and is linked directly from a post. A Blog consist of several paragraphs of text and perhaps multiple images/gifs/videos etc but can be as long as you want. There is no word minimum or maximum. Images are always good though!
+There are 2 types of content available to be created. These are 'Posts' and 'Blogs'. A post is a small card on the main blog page that links directly to the blog article. Each individual blog is a completely separate web page which allows for a longer form of writing. The posts are separated into months so they are easier to navigate as more blogs are developed. A blog is a long form article and is linked directly from a post. A Blog consist of several paragraphs of text and perhaps multiple images/gifs/videos etc but can be as long as you want. There is no word minimum or maximum. Images are always good though!
 
 **NAMING CONVENTIONS:**
 
@@ -81,7 +81,7 @@ The general process of contributing on GitHub is widely documented however the o
 
 ## Acknowledgments
 
-Thanks to Dinke and Callum for the great feedback on the UX of the site which greatly improved the design. 
+A big thanks to <b><a href="https://github.com/DinkieShy">DinkieShy</a></b> and <b><a href="https://github.com/Lumbo1379">Callum Thompson</a></b> for their feedback on the UX of the site which greatly improved the design prior to launch. 
 
 
 

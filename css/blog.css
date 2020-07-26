@@ -72,7 +72,8 @@ body {
 
 .links {
    background-color: white;
-   font-size: 16px;
+   line-height: 1.5;
+   font-size: 15px;
    border-radius: 5px;
    padding: 5px;
    margin-top: 20px;

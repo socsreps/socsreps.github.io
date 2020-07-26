@@ -175,6 +175,8 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   float:right!important;
 }
 
+.w3-padding-faq{padding-top:32px!important;padding-bottom:0px!important}
+
 .w3-bar-item1{padding:8px 16px;float:right;width:auto;border:none;display:block;outline:0}
 
 
@@ -223,7 +225,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   text-align: center;
 }
 
-/* Only shows the burger menu when the screen size is under 600px */
+/* Only shows the burger menu when the screen size is under 704px */
 @media (min-width: 704px) 
 { 
 	.dropbtn {
@@ -312,4 +314,42 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   background-color: #f1f1f1;
+}
+
+
+/* This displays the tabbed links in the FAQ section */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  padding-bottom: 20px;
+  display: none;
+}
+
+/* Useful Links layout */
+.column {
+
+  width: 50%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }

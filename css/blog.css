@@ -70,6 +70,17 @@ body {
    margin-right: 20px;
 }
 
+.links {
+   background-color: white;
+   font-size: 14px;
+   line-height: 1;
+   border-radius: 5px;
+   padding: 5px;
+   margin-top: 20px;
+   margin-left: 20px;
+   margin-right: 20px;
+}
+
 
 /* Footer */
 .footer {

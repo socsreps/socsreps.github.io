@@ -62,23 +62,21 @@ body {
 
 /* Add a card effect for articles */
 .faq {
-   background-color: white;
    border-radius: 5px;
-   padding: 30px;
    margin-top: 20px;
-   margin-left: 20px;
-   margin-right: 20px;
+   margin-left: 50px;
+   margin-right: 50px;
 }
 
 .links {
    background-color: white;
+   border-radius: 5px;
    line-height: 1.5;
    font-size: 15px;
-   border-radius: 5px;
    padding: 5px;
    margin-top: 20px;
-   margin-left: 20px;
-   margin-right: 20px;
+   margin-left: 50px;
+   margin-right: 50px;
 }
 
 
@@ -102,5 +100,18 @@ body {
    margin-left: 10px;
    margin-right: 10px;
 }
+
+.faq {
+   margin-left: 10px;
+   margin-right: 10px;
+}
+
+.links {
+   margin-left: 10px;
+   margin-right: 10px;
+}
+
+
+
 }
 

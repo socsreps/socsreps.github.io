@@ -48,16 +48,84 @@
 </header>
 
  <!-- About Section -->
-  <div class="w3-container w3-padding-32" id="feedback">
+  <div class="w3-container w3-padding-faq" id="feedback">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Frequently Asked Questions</h3>
-    <p>The course reps get asked many questions and some of them require the same support. This can include things such as sign posting, inquiring on ways to get help or even how to give feedback about a lecture. To help with this we have put together this FAQs. If you want to add an FAQ please contact any one of us through the email links on our <a href="index.html#about">Contact Us</a> page or head over to our <a href="https://github.com/socsreps/socsreps.github.io">GitHub</a> repo and make a pull request or raise an issue. All emails are received in the strictest of confidence.
+    <p>The course reps get asked many questions and some of them require the same support. This can include things such as sign posting, inquiring on ways to get help or even how to give feedback about a lecture. To help with this we have put together some Useful Links and FAQs. If you want to add an FAQ or a new Useful Link please contact any one of us through the email links on our <a href="index.html#about">Contact Us</a> page or head over to our <a href="https://github.com/socsreps/socsreps.github.io">GitHub</a> repo and make a pull request or raise an issue. All emails are received in the strictest of confidence.
     </p>
 
+     <!-- FAQ and Useful Link Tab Buttons -->
+    <button class="tablink" onclick="openPage('FAQ', this, 'green')" style="width: 50%" id="defaultOpen">FAQ</button>
+    <button class="tablink" onclick="openPage('usefulLinks', this, 'green')" style="width: 50%">Useful Links</button>
   </div>
 
-<!-- FAQs -->
 
-<div class="faq">
+
+
+<!-- Useful Links Section -->
+<div id="usefulLinks" class="tabcontent">
+  <div class="links">
+    <div class="w3-content w3-padding" style="max-width:1564px">
+      <div class="w3-container w3-padding-16" id="projects">
+        <div class="w3-row-padding">
+
+          <!-- Add more of these to get more sections. Remember to change l4 etc so add up to 12 for column widths -->
+          <div class="w3-col l3 m6">
+            <div class="w3-display-container">
+            <h4>SoCS</h4>
+            <p><a href="https://github.com/socsreps/socsreps.github.io">Some text..</a></p>
+            <p>Some text..</p>
+            <p>Some text..</p>
+            </div>
+          </div>
+
+          <div class="w3-col l3 m6">
+            <div class="w3-display-container">
+            <h4>Library</h4>
+            <p><a href="https://guides.library.lincoln.ac.uk/about">Library Guides</a></p>
+            <p><a href="https://guides.library.lincoln.ac.uk/about/study-spaces">Room Bookings</a></p>
+            <p><a href="https://guides.library.lincoln.ac.uk/compsci">Games & Computing Resource</a></p>
+            <p><a href="https://guides.library.lincoln.ac.uk/about/computers-printing">Check Your Print Balance</a></p>
+            </div>
+          </div>
+
+          <div class="w3-col l3 m6">
+          <div class="w3-display-container">
+            <h4>Wellbeing</h4>
+            <p>Some text..</p>
+            <p>Some text..</p>
+            <p>Some text..</p>
+            </div>
+          </div>
+
+
+          <div class="w3-col l3 m6">
+          <div class="w3-display-container">
+            <h4>Facilities</h4>
+            <p><a href="https://www.lincoln.ac.uk/map/brayford.html">Campus Map</a></p>
+            <p><a href="https://www.lincoln.ac.uk/map/index.html">Building Maps & Room Layouts</a></p>
+            <p>Some text..</p>
+            <p>Some text..</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+<!-- FAQs Section -->
+
+<div id="FAQ" class="tabcontent">
+  <div class="faq">
     <button type="button" class="collapsible" style="font-size: 18px">What are the best ways to contact my course rep?</button>
     <div class="content">
     <p>There are several ways to contact your course reps but the best way is via email. All course reps emails can be found in the <a href="index.html#about">Contact Us</a> section of the website which is found at the top of every web page. Alternately, all rep contact details are on the LincolnSU website.</p>
@@ -80,7 +148,7 @@
 
     <button type="button" class="collapsible" style="font-size: 18px">Can I contact a course rep anonymously?</button>
     <div class="content">
-    <p>Yes. There are many times when you may want to raise an issue in an anonymous way. We have provided for this by including a <a href="feedback.html">Feedback Form</a> which does not require any personal details to complete. The Feedback page link can also be found at the top of every web page across the site and you can just complete the sections you want, then submit. 
+    <p>Yes. There are many times when you may want to raise an issue in an anonymous way. We have provided for this by including a <a href="feedback.html">Feedback Form</a> which does not require any personal details to complete. The Feedback page link can also be found at the top of every web page across the site and you can just complete the sections you want, then submit. </p>
     </div>
 
     <button type="button" class="collapsible" style="font-size: 18px">Can I request a meeting with a course rep?</button>
@@ -103,6 +171,11 @@
 
 
 
+
+
+
+
+  </div>
 </div>
 
 
@@ -160,5 +233,23 @@ for (i = 0; i < coll.length; i++) {
     } 
   });
 }
+
+// Creates tabbed pages and populates
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
 
 </script>

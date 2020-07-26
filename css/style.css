@@ -163,11 +163,11 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-section,.w3-code{margin-top:16px!important;margin-bottom:16px!important}
 .w3-margin{margin:16px!important}.w3-margin-top{margin-top:16px!important}.w3-margin-bottom{margin-bottom:16px!important}
 .w3-margin-left{margin-left:16px!important}.w3-margin-right{margin-right:16px!important}
-.w3-padding-small{padding:4px 8px!important}.w3-padding{padding:0px 16px!important}.w3-padding-large{padding:12px 24px!important}
+.w3-padding-small{padding:4px 8px!important}.w3-padding{padding:0px 16px!important; border-top-left-radius: 5px;}.w3-padding-large{padding:12px 24px!important}
 
 
 .w3-padding-16{padding-top:16px!important;padding-bottom:16px!important}.w3-padding-24{padding-top:24px!important;padding-bottom:24px!important}
-.w3-padding-32{padding-top:32px!important;padding-bottom:32px!important}.w3-padding-48{padding-top:48px!important;padding-bottom:48px!important}
+.w3-padding-32{padding-top:32px!important;padding-bottom:32px!important;padding-left:50px!important;padding-right:50px!important;}.w3-padding-48{padding-top:48px!important;padding-bottom:48px!important}
 .w3-padding-64{padding-top:64px!important;padding-bottom:64px!important}
 .w3-left{float:left!important}
 
@@ -175,7 +175,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   float:right!important;
 }
 
-.w3-padding-faq{padding-top:32px!important;padding-bottom:0px!important}
+.w3-padding-faq{padding-top:32px!important;padding-bottom:0px!important;padding-left:50px!important;padding-right:50px!important;}
 
 .w3-bar-item1{padding:8px 16px;float:right;width:auto;border:none;display:block;outline:0}
 
@@ -224,15 +224,6 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .textcenter {
   text-align: center;
 }
-
-/* Only shows the burger menu when the screen size is under 704px */
-@media (min-width: 704px) 
-{ 
-	.dropbtn {
-	display: none;
-	}
-}
-
 
 /* Dropdown Button */
 .dropbtn {
@@ -286,7 +277,8 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   cursor: pointer;
   padding: 18px;
   width: 100%;
-  border: 2px solid white;
+  border-style: none;
+  margin-top: 2px;
   text-align: left;
   font-size: 18px;
 }
@@ -313,7 +305,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
+  background-color: white;
 }
 
 
@@ -351,4 +343,29 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   content: "";
   display: table;
   clear: both;
+}
+
+
+/* Only shows the burger menu when the screen size is under 704px */
+@media (min-width: 704px) 
+{ 
+  .dropbtn {
+  display: none;
+  }
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+
+.w3-padding-faq{
+  padding-left:10px!important;
+  padding-right:10px!important;
+}
+
+.w3-padding-32{
+  padding-left:10px!important;
+  padding-right:10px!important;
+}
+
+
 }

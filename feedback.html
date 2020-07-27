@@ -50,7 +50,7 @@
 
 
   <!-- About Section -->
-  <div class="w3-container w3-padding-32" id="feedback">
+  <div class="w3-container w3-padding-faq" id="feedback">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">We Need Your Feedback</h3>
     <p>One of the most important ways SoCS identifies areas that can be improved is by receiving open and honest feedback from its student population throughout the year. We need <b>your</b> help to tell us what areas can be improved or if you think something has been done well (so we can do more of it). No concern or idea is too small.
     </p>
@@ -60,11 +60,59 @@
 
     <p><b>NOTE: All feedback is anonymous. No personal information is needed to provide feedback.</b></p>
 
+
+    <!-- FAQ and Useful Link Tab Buttons -->
+    <button class="tablink" onclick="openPage('feedbackForm', this, 'orange')" style="width: 50%" id="defaultOpen">Feedback Form</button>
+    <button class="tablink" onclick="openPage('whatWeHaveDone', this, 'orange')" style="width: 50%">Feedback Response</button>
+
   </div>
 
 
+  <!-- Feedback Form tab - remeber to change width to 100% on iframe -->
+<div id="feedbackForm" class="tabcontent">
+
   <!-- Google Forms - Feedback Form - Change this when questions change. These results can be seen using the computingrep email-->
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSehGniKAiczlGB08h51TtT_ICFVEYYZ13F-Dp44Xt_ENWKOWw/viewform?embedded=true" width="100%" height="1712" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSehGniKAiczlGB08h51TtT_ICFVEYYZ13F-Dp44Xt_ENWKOWw/viewform?embedded=true" width="100%" height="1712" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+</div>
+
+
+  <!-- What we have done tab -->
+<div id="whatWeHaveDone" class="tabcontent">
+  <div class="faq">
+
+  <!-- Please change the title, date and responder for each feedback reply -->
+    <button type="button" class="collapsible" style="font-size: 18px">When I enroll I update my details but they don't seem to change. I have tried this several times.<br><b style="font-size:10px;">13 July 2020</b></button>
+    <div class="content">
+      <p>We contacted the School Admin who spoke with ICT. They said that it can take up to 24 hours for the system to show the update. We made 2 further requests on ICT and asked that they make a note above the button clarifying what the Update Details button was used for (just enrollment or all year round details change) and a note below the button saying that it will take 24 hours for changes to be seen. These have both been approved.</p>
+      <h4><b>Response by Garry</b></h4>
+    </div>
+
+    <button type="button" class="collapsible" style="font-size: 18px">Will I be able to get access to the INB Labs when University starts in October. My personal computer is not powerful enough to do some of the work required in the modules.<br><b style="font-size:10px;">10 July 2020</b></button>
+    <div class="content">
+      <p>We emailed the school and the response was the INB Labs will be open but there may be some restrictions in place with regards to social distancing and health and safety. Additionally, remote machines are also being provisioned so students can access computational resource from their homes without a high-end machine. This is still work in progress and an official statement from the school about how things will be done going forwards will be sent in due time. </p>
+      <h4><b>Response by Garry</b></h4>
+    </div>
+
+    <button type="button" class="collapsible" style="font-size: 18px">Where can I find more details about what the changes to teaching will be for next 20/21 year?<br><b style="font-size:10px;">1 July 2020</b></button>
+    <div class="content">
+      <p>We have spoken with the School at length about getting more information to the students about the specific changes being made to the SoCS Teaching and Learning for the 20/21 academic year. We have been told that several changes will take place and SoCS have committed to providing more clarifying information to students early August.</p>
+      <h4><b>Response by Garry</b></h4>
+    </div>
+
+
+
+
+
+
+
+
+
+  </div>
+</div>
+
+
+
 
 
 <!-- Footer -->
@@ -74,15 +122,40 @@
 
 
 
-<!-- Single script that fetches all the posts and places them in the DOM -->
+
 <script>
-  $(function(){
-    var includes = $('[data-include]');
-    jQuery.each(includes, function(){
-      var file = 'posts/' + $(this).data('include') + '.html';
-      $(this).load(file);
-    });
+
+// Enables the burger menu button and populates it with the links 
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+
+// Populates the callapsible
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
   });
+}
+
 
 
 // Enables the burger menu button and populates it with the links 
@@ -100,7 +173,23 @@ window.onclick = function(e) {
   }
 }
 
+// Creates tabbed pages and populates
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
 
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
 
   
 </script>

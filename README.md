@@ -81,7 +81,7 @@ The general process of contributing on GitHub is widely documented however the o
 
 ## Acknowledgments
 
-A big thanks to <b><a href="https://github.com/DinkieShy">DinkieShy</a></b> and <b><a href="https://github.com/Lumbo1379">Callum Thompson</a></b> for their feedback on the UX of the site which greatly improved the design prior to launch. 
+A big thanks to <b><a href="https://github.com/DinkieShy">DinkieShy</a></b> and <b><a href="https://github.com/Lumbo1379">Callum Thompson</a></b> for their feedback on the UX of the site which greatly improved the design prior to launch. Thanks to <b><a href="https://github.com/18684092">Andy Perrett</a></b> for suggestions around providing feedback and associated responses.
 
 
 

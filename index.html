@@ -50,8 +50,9 @@
   </div>
 
   <div class="w3-row-padding textcenter">
-    <div class="w3-col l4 m4 w3-margin-bottom" style="line-height:1.5;">
-      <img src="assets/garry-clawson.png" class="center" id="Garry" style="width:50%;">
+
+        <div class="w3-col l4 m4 w3-margin-bottom" style="line-height:1.5;">
+      <img src="assets/garry-clawson.png" class="center" id="Garry" style="width:65%;">
       <p><b>Garry Clawson</b></p>
       <p class="w3-opacity">SoCS School Rep</p>
       <p>BSc(Hons) Computer Science - Yr 3</p>
@@ -59,7 +60,7 @@
       <a href="mailto:computingrep@lincolnsu.com" class="w3-button email-button w3-light-grey w3-block"><b>Send Email</b></a>
     </div>
     <div class="w3-col l4 m4 w3-margin-bottom" style="line-height:1.5;">
-      <img src="assets/placeholder.png" class="center" alt="Ben" style="width:50%">
+      <img src="assets/placeholder.png" class="center" alt="Ben" style="width:65%">
       <p><b>Benjamin Clarke</b></p>
       <p class="w3-opacity">Course Rep - Yr 3</p>
       <p>BSc(Hons) Computer Science - Yr 3</p>
@@ -67,7 +68,7 @@
       <a href="mailto:someone@example.com" class="w3-button email-button w3-light-grey w3-block"><b>Send Email</b></a>
     </div>
     <div class="w3-col l4 m4 w3-margin-bottom" style="line-height:1.5;">
-      <img src="assets/nick-jackson.png" class="center" alt="Nick" style="width:50%">
+      <img src="assets/nick-jackson.png" class="center" alt="Nick" style="width:65%">
       <p><b>Nicholas Jackson</b></p>
       <p class="w3-opacity">Course Rep - Yr 2</p>
       <p>BSc(Hons) Computer Science - Yr 2</p>
@@ -77,9 +78,9 @@
 
   </div>
 
-  <div class="w3-row-padding textcenter">
+ <div class="w3-row-padding textcenter">
     <div class="w3-col l4 m4 w3-margin-bottom" style="line-height:1.5;">
-      <img src="assets/zuzy-walaszczyk.png" class="center" alt="Zuzy" style="width:50%">
+      <img src="assets/zuzy-walaszczyk.png" class="center" alt="Zuzy" style="width:65%">
       <p><b>Zuzanna Walaszczyk</b></p>
       <p class="w3-opacity">Course Rep - Yr 2</p>
       <p>BSc(Hons) Games Computing - Yr 2</p>
@@ -87,7 +88,7 @@
       <a href="mailto:19695570@students.lincoln.ac.uk" class="w3-button email-button w3-light-grey w3-block"><b>Send Email</b></a>
     </div>
     <div class="w3-col l4 m4 w3-margin-bottom" style="line-height:1.5;">
-      <img src="assets/brandon-dodds.png" class="center" alt="Brandon" style="width:50%">
+      <img src="assets/brandon-dodds.png" class="center" alt="Brandon" style="width:65%">
       <p><b>Brandon-Lee Dodds</b></p>
       <p class="w3-opacity">Course Rep - Yr 2</p>
       <p>BSc(Hons) Computer Science - Yr 2</p>
@@ -95,7 +96,7 @@
       <a href="mailto:19696909@students.lincoln.ac.uk" class="w3-button email-button w3-light-grey w3-block"><b>Send Email</b></a>
     </div>
         <div class="w3-col l4 m4 w3-margin-bottom" style="line-height:1.5;">
-      <img src="assets/placeholder.png" class="center" alt="Reece" style="width:50%">
+      <img src="assets/placeholder.png" class="center" alt="Reece" style="width:65%">
       <p><b>Reece Jones</b></p>
       <p class="w3-opacity">Course Rep - Yr 2</p>
       <p>BSc(Hons) Games Computing - Yr 2</p>
@@ -103,6 +104,13 @@
       <a href="mailto:someone@example.com" class="w3-button email-button w3-light-grey w3-block"><b>Send Email</b></a>
     </div>
   </div>
+
+
+
+
+
+
+
 
   <!-- How the team fits together Section -->
   <div class="w3-container w3-padding-32" id="about">
@@ -218,12 +226,21 @@ function myFunction() {
 
 // Close the dropdown if the user clicks outside of it
 window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
+  if (!e.target.matches('.dropbtn .emaillink')) {
   var myDropdown = document.getElementById("myDropdown");
     if (myDropdown.classList.contains('show')) {
       myDropdown.classList.remove('show');
     }
   }
 }
+
+// Enables the contactme button and populates it
+function contactGarry() {
+  document.getElementById("contactGarry").classList.toggle("show");
+}
+
+
+
+
 
 </script>

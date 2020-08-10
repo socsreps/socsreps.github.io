@@ -47,7 +47,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-table td,.w3-table th,.w3-table-all td,.w3-table-all th{padding:8px 8px;display:table-cell;text-align:left;vertical-align:top}
 .w3-table th:first-child,.w3-table td:first-child,.w3-table-all th:first-child,.w3-table-all td:first-child{padding-left:16px}
 
-.w3-btn,.w3-button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+.w3-btn,.w3-button{border:none;display:inline-block;padding:16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
 
 
 .w3-btn:hover{box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)}
@@ -188,7 +188,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 
 .w3-white,.w3-hover-white:hover{color:#000!important;background-color:#fff!important}
 .w3-black,.w3-hover-black:hover{color:#fff!important;background-color:#000!important}
-.w3-light-grey,.w3-hover-light-grey:hover,.w3-light-gray,.w3-hover-light-gray:hover{color:#000!important;background-color:#add8e6!important}
+.w3-light-grey,.w3-hover-light-grey:hover,.w3-light-gray,.w3-hover-light-gray:hover{color:#000!important;background-color:#f1f1f1!important}
 
 
 /* Text Colours */
@@ -202,21 +202,22 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 }
 
 .w3-display-bottomleft{
-  position:absolute;
+  position:relative;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
   left:0;
   bottom:0;
-  border-top-right-radius: 15px;
-  background-color: #f1f1f1;
-  opacity: 0.8;
-  color: gray;
-  font-size: 12px;
+  background-color: white;
+  font-size: 14px;
 }
 
 .w3-display-topleft{
-  position:absolute;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  position:relative;
   left:0;
   top:0;
-  border-top-left-radius: 5px;
+  font-weight: bold;
 }
 
 .email-button:hover{
@@ -264,6 +265,13 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   position: absolute;
   background-color: #e4e4e4;
   min-width: 160px;
+}
+
+/* Contact Me Dropdown Content (Hidden by Default) */
+.contact-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: red;
 }
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
@@ -330,12 +338,45 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   cursor: pointer;
   padding: 14px 16px;
   font-size: 18px;
-
 }
 
 .tablink:hover {
   background-color: #777;
 }
+
+/* This displays Email link buttons on the Index page */
+.emaillink {
+  position: relative;
+  background-color: #e9e9e9;
+  color: black;
+  border: 1px white solid;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 18px;
+  text-decoration: none
+}
+
+.emaillink:hover {
+  background-color: #9ae4ad;
+  color: white;
+
+}
+
+/* This displays Email dropdown stuff */
+.emaillinkdropdown {
+  position: relative;
+  background-color: red;
+  color: black;
+  border: 1px white solid;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 18px;
+  text-decoration: none
+}
+
+
 
 /* Style the tab content (and add height:100% for full page content) */
 .tabcontent {
@@ -368,20 +409,19 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
 
-.w3-padding-faq{
-  padding-left:10px!important;
-  padding-right:10px!important;
-}
+  .w3-padding-faq{
+    padding-left:10px!important;
+    padding-right:10px!important;
+  }
 
-.w3-padding-32{
-  padding-left:10px!important;
-  padding-right:10px!important;
-}
+  .w3-padding-32{
+    padding-left:10px!important;
+    padding-right:10px!important;
+  }
 
-.tablink {
-  font-size: 16px;
+  .tablink {
+    font-size: 16px;
 
-}
-
+  }
 
 }

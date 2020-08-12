@@ -188,7 +188,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 
 .w3-white,.w3-hover-white:hover{color:#000!important;background-color:#fff!important}
 .w3-black,.w3-hover-black:hover{color:#fff!important;background-color:#000!important}
-.w3-light-grey,.w3-hover-light-grey:hover,.w3-light-gray,.w3-hover-light-gray:hover{color:#000!important;background-color:#f1f1f1!important}
+.w3-light-grey,.w3-hover-light-grey:hover,.w3-light-gray,.w3-hover-light-gray:hover{color:#000!important;background-color:#e8e8e8!important}
 
 
 /* Text Colours */
@@ -221,8 +221,8 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 }
 
 .email-button:hover{
-  color:#000!important;
-  background-color:#9ae4ad!important;
+  color:#fff!important;
+  background-color:#3b3bff!important;
 }
 
 .center {
@@ -395,6 +395,22 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   content: "";
   display: table;
   clear: both;
+}
+
+/* Symbols for Useful Links Section */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa {
+  padding: 5px;
+  border-radius: 50%;
 }
 
 

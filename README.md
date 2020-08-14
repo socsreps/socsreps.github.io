@@ -4,9 +4,9 @@ The SoCS SU Reps Web Blog has been created to provide an open and free space to 
 
 ## Overview
 
-This website has been created using the most basic of HTML/CSS/JS. The limited JS used in the site is purely to collate posts onto a single page and make it easier for contributers to link their blogs without having to go to several different pages. 
+This website has been created using the most basic of HTML/CSS/JS. The limited JS used in the site is purely to populate the burger menu bar drop downs and populate faqs drop downs. No tracking, cookies etc are used. 
 
-The reason to keep the site as simple as possible is to encourage as many contributors as possible who may not yet have experience in open source collaboration, or who may not be familiar with the Git process or web design in general. 
+The reason we wanted to keep the site as simple as possible is to encourage as many contributors as possible who may not yet have experience in open source collaboration, or who may not be familiar with the Git process or web design in general. 
 
 This project hopefully provides a very easy way to start your journey on open source software development using these tools. 
 
@@ -81,7 +81,7 @@ The general process of contributing on GitHub is widely documented however the o
 
 ## Acknowledgments
 
-A big thanks to <b><a href="https://github.com/DinkieShy">DinkieShy</a></b> and <b><a href="https://github.com/Lumbo1379">Callum Thompson</a></b> for their feedback on the UX of the site which greatly improved the design prior to launch. Thanks to <b><a href="https://github.com/18684092">Andy Perrett</a></b> for suggestions around providing feedback and associated responses.
+A big thanks to <b><a href="https://github.com/DinkieShy">DinkieShy</a></b>, <b><a href="https://github.com/Lumbo1379">Callum Thompson</a></b> and <b><a href="https://github.com/elliott-huge">Elliott Hughes</a></b> for their feedback on the UX of the site which greatly improved the design prior to launch. Thanks to <b><a href="https://github.com/18684092">Andy Perrett</a></b> for suggestions around providing feedback and associated responses.
 
 
 

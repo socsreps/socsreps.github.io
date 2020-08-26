@@ -7,6 +7,10 @@
 body {
   font-family: Arial;
 
+  max-width: 1500px; 
+  margin: 0 auto !important; 
+  float: none !important;
+
   background: #f1f1f1;
 }
 
@@ -82,7 +86,6 @@ body {
    margin-right: 50px;
 }
 
-
 /* Footer */
 .footer {
   padding: 20px;
@@ -90,6 +93,8 @@ body {
   background: #ddd;
   margin-top: 20px;
 }
+
+
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
@@ -102,19 +107,17 @@ body {
    padding: 10px;
    margin-left: 10px;
    margin-right: 10px;
-}
+  }
 
-.faq {
+  .faq {
    margin-left: 10px;
    margin-right: 10px;
-}
+  }
 
-.links {
+  .links {
    margin-left: 10px;
    margin-right: 10px;
-}
-
-
+  }
 
 }
 

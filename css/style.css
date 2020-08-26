@@ -26,7 +26,25 @@ legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}t
 /* End extract */
 
 /* Font Sizes */
-html,body{font-family:Roboto,sans-serif;font-size:18px;line-height:2}html{overflow-x:hidden}
+html{
+  font-family:Roboto,
+  sans-serif;
+  font-size:18px;
+  line-height:2
+}
+
+body{
+  font-family:Roboto,
+  sans-serif;
+  font-size:18px;
+  line-height:2
+
+  max-width: 1500px; 
+  margin: 0 auto !important; 
+  float: none !important;
+}
+
+html{overflow-x:hidden}
 h1{font-size:36px}
 h2{font-size:30px}
 h3{font-size:24px}
@@ -123,7 +141,23 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 
 @media (max-width:992px){.w3-sidebar.w3-collapse{display:none}.w3-main{margin-left:0!important;margin-right:0!important}.w3-auto{max-width:100%}}
 
-.w3-top,.w3-bottom{position:fixed;width:100%;z-index:1}.w3-top{top:0}.w3-bottom{bottom:0}
+.w3-top{
+  max-width: 1500px; 
+  margin: 0 auto !important; 
+  float: none !important;
+  z-index:1
+}
+
+.max-width{
+  max-width: 1500px; 
+  margin: 0 auto !important; 
+  float: none !important;
+}
+
+
+.w3-top{top:0; border: none;}.w3-bottom{bottom:0}
+
+
 .w3-overlay{position:fixed;display:none;width:100%;height:100%;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.5);z-index:2}
 .w3-display-topright{position:absolute;right:0;top:0}
 
@@ -222,7 +256,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 
 .email-button:hover{
   color:#fff!important;
-  background-color:#3b3bff!important;
+  background-color:green!important;
 }
 
 .center {
@@ -245,6 +279,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   font-size: 14px;
   border: none;
   cursor: pointer;
+
 }
 
 /* Dropdown button on hover & focus */
@@ -265,6 +300,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   position: absolute;
   background-color: #e4e4e4;
   min-width: 160px;
+  z-index: 1;
 }
 
 /* Contact Me Dropdown Content (Hidden by Default) */
@@ -289,10 +325,12 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {background-color: #ddd}
 
-/* Callaspsible boxes for FAQ page */
+
+
+/* Callaspsible boxes headers for FAQ and feedback page */
 .collapsible {
-  background-color: #D3D3D3;
-  color: black;
+  background-color: #999;
+  color: white;
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -303,7 +341,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 }
 
 .active, .collapsible:hover {
-  background-color: #999;
+  background-color: green;
   color: white;
 }
 
@@ -328,7 +366,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 }
 
 
-/* This displays the tabbed links in the FAQ section */
+/* This displays the tabbed links headers in the FAQ & Feedback section */
 .tablink {
   background-color: #555;
   color: white;
@@ -341,8 +379,11 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 }
 
 .tablink:hover {
-  background-color: #777;
+  background-color: #999;
+  color: black;
 }
+
+
 
 /* This displays Email link buttons on the Index page */
 .emaillink {

@@ -34,7 +34,7 @@ To make the formatting of the website as simple as possible there are 2 image si
 
 **About Us Images:** 	400px x 400px
 
-**Post Images:** 		900px x 700px
+**Post Images:** 		450px x 350px
 
 Where possible please try to use these sizes as it helps keep the posts on the main blog page the same size as well as working more evenly across screen sizes.
 

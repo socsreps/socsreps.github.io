@@ -254,7 +254,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   font-weight: bold;
 }
 
-.w3-display-container:hover{
+.shade:hover{
     -webkit-filter: brightness(70%);
     -webkit-transition: all 10.5s ease;
     -moz-transition: all 0.5s ease;

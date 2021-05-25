@@ -447,6 +447,12 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   display: none;
 }
 
+/* Picture Blog Layout */
+.column2 {
+  width: 100%;
+  padding: 10px;
+}
+
 /* Useful Links layout */
 .column {
   width: 50%;
@@ -523,7 +529,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 }
 
 
-/* LatEx Styles */
+/* LaTeX Styles */
 .tex sub, .latex sub, .latex sup {
       text-transform: uppercase;
     }

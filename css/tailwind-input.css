@@ -12,3 +12,34 @@
 .header-image {
   background-image: url("/assets/header.jpg");
 }
+
+*[data-tooltip] {
+    @apply relative border-b border-dotted cursor-help border-black;
+}
+
+.tooltip {
+  display: none;
+  position: absolute;
+  z-index: 10;
+  bottom: -0.2rem;
+  left: 50%;
+  
+  margin-right: -9999999px;
+  max-width: 15rem;
+  min-width: 8rem;
+  transform: translateY(100%) translateX(-50%);
+  text-align: center;
+  pointer-events: none;
+}
+
+.tooltip-open .tooltip {
+  display: block;
+}
+
+.tooltip {
+    background-color: #222;
+    border-radius: 4px;
+    color: white;
+    padding: .7rem 1rem;
+  }
+  

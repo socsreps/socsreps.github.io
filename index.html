@@ -189,14 +189,14 @@
 
                         <div class="w-full md:w-1/3">
                             <div class="w3-display-container">
-                                <h4>SoCS</h4>
+                                <h4><b>SoCS</b></h4>
                                 <p><a href="https://www.lincoln.ac.uk/home/socs/staffcontactlist/">Staff List</a></p>
                                 <p><a href="https://socs.blogs.lincoln.ac.uk/">Blog</a></p>
-                                <p><a href="https://lcas.lincoln.ac.uk/wp/" class="hasTooltip">L-CAS</a><span>L-CAS is the Lincoln Centre for Autonomous Systems Research (L-CAS), the University of Lincoln’s cross-disciplinary research group in robotics </span></p>
-                                <p><a href="https://www.visioneng.org.uk/" class="hasTooltip">LoVE</a><span>LoVE, led by Prof. Nigel Allinson, specialises in the capture, transmission, processing and understanding of image, video and other high-dimensional data</span></p>
-                                <p><a href="https://agriforwards-cdt.blogs.lincoln.ac.uk/about-us/#" class="hasTooltip">AgriFoRwArdS</a><span>AgriFoRwArdS is the EPSRC Centre for Doctoral Training in Agri-Food Rotics </span></p>
-                                <p><a href="http://intlab.co.uk" class="hasTooltip">INTLAB</a><span>Intlab is a Human-Computer Interaction (HCI) research group in the School of Computer Science at the University of Lincoln</span></p>
-                                <p><a href="https://mlearn.lincoln.ac.uk" class="hasTooltip">MLearn</a><span>University of Lincoln Machine Learning Group</span></p>
+                                <p><a href="https://lcas.lincoln.ac.uk/wp/" data-tooltip="L-CAS is the Lincoln Centre for Autonomous Systems Research (L-CAS), the University of Lincoln’s cross-disciplinary research group in robotics">L-CAS</a></p>
+                                <p><a href="https://www.visioneng.org.uk/" data-tooltip="LoVE, led by Prof. Nigel Allinson, specialises in the capture, transmission, processing and understanding of image, video and other high-dimensional data">LoVE</a></p>
+                                <p><a href="https://agriforwards-cdt.blogs.lincoln.ac.uk/about-us/" data-tooltip="AgriFoRwArdS is the EPSRC Centre for Doctoral Training in Agri-Food Rotics">AgriFoRwArdS</a></p>
+                                <p><a href="http://intlab.co.uk" data-tooltip="Intlab is a Human-Computer Interaction (HCI) research group in the School of Computer Science at the University of Lincoln">INTLAB</a></p>
+                                <p><a href="https://mlearn.lincoln.ac.uk" data-tooltip="University of Lincoln Machine Learning Group">MLearn</a></p>
                             </div>
                         </div>
 
@@ -316,18 +316,17 @@
         document.getElementById("vertical-nav").classList.toggle("hidden");
     }
 
-    document.getElementById("vertical-nav").addEventListener("click", function(e) {
-        if (e.target != e.currentTarget)
-            return;
-        document.getElementById("vertical-nav").classList.add("hidden");
+    document.querySelectorAll("*[data-tooltip]").forEach(node => {
+        const el = document.createElement("span")
+        el.innerText = node.getAttribute('data-tooltip');
+        el.classList = "tooltip"
+        node.appendChild(el)
+        node.addEventListener('mouseenter', (e) => {
+            e.target.classList.add('tooltip-open')
+        })
+        node.addEventListener('mouseleave', (e) => {
+            e.target.classList.remove('tooltip-open')
+        })
     })
 
-    //Tooltip for useful link
-    $('.hasTooltip').hover(function() {
-        var offset = $(this).offset();
-        $(this).next('span').fadeIn(200).addClass('showTooltip');
-
-    }, function() {
-        $(this).next('span').fadeOut(200);
-    });
 </script>

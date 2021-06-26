@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.navbar-button {
+  @apply px-4 py-2 inline-block ml-2 hover:bg-gray-200 rounded hover:no-underline;
+}
+
+.vertical-nav-button {
+  @apply px-4 py-2 hover:bg-blue-300 hover:no-underline;
+}
+
+.header-image {
+  background-image: url("/assets/header.jpg");
+}

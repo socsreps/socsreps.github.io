@@ -1,0 +1,25 @@
+{
+    "name": "socsreps.github.io",
+    "version": "1.0.0",
+    "description": "The SoCS SU Reps Web Blog has been created to provide an open and free space to ask any questions from any of the School Reps or Course Reps. It will be a central repository of comments through the year as well as a guide for further course reps. The content will be created entirely by the course reps and free from any influence of the University of Lincoln SoCS. The aim here is to ensure this space is completely neutral and to help provide the best quality feedback to the SoCS so that as reps we can make this the best school as possible.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "watch": "npx tailwindcss -i css/tailwind-input.css -o css/tailwind-dist.css --watch",
+        "build": "set NODE_ENV=production&&npx tailwindcss -i css/tailwind-input.css -o css/tailwind-dist.css --minify"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/socsreps/socsreps.github.io.git"
+    },
+    "author": "socsreps",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/socsreps/socsreps.github.io/issues"
+    },
+    "homepage": "https://github.com/socsreps/socsreps.github.io#readme",
+    "dependencies": {
+        "autoprefixer": "^10.2.6",
+        "tailwindcss": "^2.2.4"
+    }
+}

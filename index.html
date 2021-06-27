@@ -18,46 +18,43 @@
 <script src="https://kit.fontawesome.com/1e65277c13.js"></script>
 
 <body>
-
-    <div class="container px-4 md:p-0 mx-auto">
-
-    <!-- Navbar (sit on top) -->
-    <div>
-        <div class="w-full flex px-4 py-2 flex-row items-center md">
-            <a href="index.html" class="py-2 text-2xl hover:text-red-600 transition-colors"><span class="font-bold">SoCS</span>&nbsp;SU REPS</a>
-            <div class="flex-row items-center flex-1 flex text-lg">
+<!-- Navbar (sit on top) -->
+<div>
+    <div class="w-full flex px-4 py-2 flex-row items-center md">
+        <a href="index.html" class="py-2 text-2xl hover:text-red-600 transition-colors"><span class="font-bold">SoCS</span>&nbsp;SU REPS</a>
+        <div class="flex-row items-center flex-1 flex text-lg ml-8">
+            <div class="items-center hidden md:flex">
+                <a href="blog.html" class="navbar-button">Blog</a>
+                <a href="feedback.html" class="navbar-button">Feedback</a>
+                <a href="faq.html" class="navbar-button">FAQ</a>
+                <a href="index.html#rep-team" class="navbar-button">Contact Us</a>
+            </div>
+            <div class="flex items-center flex-1 justify-end">
                 <div class="items-center hidden md:flex">
-                    <a href="blog.html" class="navbar-button">Blog</a>
-                    <a href="feedback.html" class="navbar-button">Feedback</a>
-                    <a href="faq.html" class="navbar-button">FAQ</a>
-                    <a href="index.html#about" class="navbar-button">Contact Us</a>
+                    <a href="https://twitter.com/UoL_SoCS" class="inline-block" style="text-decoration:none" target="_blank"><img src="assets/twitter-icon.svg" class="w-8">
+                    </a>
                 </div>
-                <div class="flex items-center flex-1 justify-end">
-                    <div class="items-center hidden md:flex">
-                        <a href="https://twitter.com/UoL_SoCS" class="inline-block" style="text-decoration:none" target="_blank"><img src="assets/twitter-icon.svg" class="w-8">
-                        </a>
-                    </div>
-                    <!-- Mobile Menu Button -->
-                    <button class="md:hidden text-2xl" onclick="showVerticalNav()"><i class="fas fa-bars"></i></button>
-                </div>
-
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-2xl" onclick="showVerticalNav()"><i class="fas fa-bars"></i></button>
             </div>
 
-            
-            
-
         </div>
-    </div>
 
-    <!-- Burger menu on Small Screens - show when mobile menu button is clicked -->
-    <div class="hidden bg-opacity-25 left-0 top-0" id="vertical-nav">
-        <div class="bg-blue-400 h-full flex flex-col">
-            <a class="vertical-nav-button" href="blog.html">Blog</a>
-            <a class="vertical-nav-button" href="feedback.html">Feedback</a>
-            <a class="vertical-nav-button" href="faq.html">FAQ</a>
-            <a class="vertical-nav-button" href="index.html#about">Contact Us</a>
-        </div>
     </div>
+</div>
+
+<!-- Burger menu on Small Screens - show when mobile menu button is clicked -->
+<div class="w-full hidden bg-opacity-25 left-0 top-0 mb-4 " id="vertical-nav">
+    <div class="h-full flex flex-col">
+        <a class="vertical-nav-button" href="blog.html">Blog</a>
+        <a class="vertical-nav-button" href="feedback.html">Feedback</a>
+        <a class="vertical-nav-button" href="faq.html">FAQ</a>
+        <a class="vertical-nav-button" href="index.html#rep-team">Contact Us</a>
+    </div>
+</div>
+    <div class="container px-4 md:p-0 mx-auto">
+
+    
 
     <!-- Header -->
     <header class="flex w-full header-image bg-cover bg-center items-center justify-center py-24 text-white">
@@ -75,78 +72,78 @@
 
     <!-- Useful Links -->
     <div class="md:px-8 mt-8" id="useful-links">
-        <h1 class="section-header">Useful Links</h1>
+        <h1 class="section-header text-center">Useful Links</h1>
 
-        <div class="links">
+        <div class="links mt-10">
             <div class="block sm:flex justify-between flex-wrap px-2 md:px-0">
 
                 <!-- Add more of these to get more sections. Remember to change l3 etc so add up to 12 for column widths -->
                 <div class="useful-link-column">
                         <h2 class="font-bold">Student</h2>
-                        <p><a href="https://attendance.lincoln.ac.uk">Attendance Code</a></p>
-                        <p><a href="https://lncn.ac/socs-social">SoCS Common Room</a></p>
-                        <p><a href="https://lncn.ac/socsenhance">Enhancement Courses</a></p>
-                        <p><a href="https://lncn.ac/socsenhance">Peer Mentor</a></p>
-                        <p><a href="https://lncn.ac/socshelpdesk ">SoCS Help Desk</a></p>
-                        <p><a href="https://lncn.ac/socsfeedback">SoCS Feedback</a></p>
+                        <p><a href="https://attendance.lincoln.ac.uk" target="_blank" rel="noopener">Attendance Code</a></p>
+                        <p><a href="https://lncn.ac/socs-social" target="_blank" rel="noopener">SoCS Common Room</a></p>
+                        <p><a href="https://lncn.ac/socsenhance" target="_blank" rel="noopener">Enhancement Courses</a></p>
+                        <p><a href="https://lncn.ac/socsenhance" target="_blank" rel="noopener">Peer Mentor</a></p>
+                        <p><a href="https://lncn.ac/socshelpdesk " target="_blank" rel="noopener">SoCS Help Desk</a></p>
+                        <p><a href="https://lncn.ac/socsfeedback" target="_blank" rel="noopener">SoCS Feedback</a></p>
                 </div>
 
                 <div class="useful-link-column">
                     <div class="w3-display-container">
                         <h2 class="font-bold">SoCS</h2>
-                        <p><a href="https://www.lincoln.ac.uk/home/socs/staffcontactlist/">Staff List</a></p>
-                        <p><a href="https://socs.blogs.lincoln.ac.uk/">Blog</a></p>
-                        <p><a href="https://lcas.lincoln.ac.uk/wp/" data-tooltip="L-CAS is the Lincoln Centre for Autonomous Systems Research (L-CAS), the University of Lincoln’s cross-disciplinary research group in robotics">L-CAS</a></p>
-                        <p><a href="https://www.visioneng.org.uk/" data-tooltip="LoVE, led by Prof. Nigel Allinson, specialises in the capture, transmission, processing and understanding of image, video and other high-dimensional data">LoVE</a></p>
-                        <p><a href="https://agriforwards-cdt.blogs.lincoln.ac.uk/about-us/" data-tooltip="AgriFoRwArdS is the EPSRC Centre for Doctoral Training in Agri-Food Rotics">AgriFoRwArdS</a></p>
-                        <p><a href="http://intlab.co.uk" data-tooltip="Intlab is a Human-Computer Interaction (HCI) research group in the School of Computer Science at the University of Lincoln">INTLAB</a></p>
-                        <p><a href="https://mlearn.lincoln.ac.uk" data-tooltip="University of Lincoln Machine Learning Group">MLearn</a></p>
+                        <p><a href="https://www.lincoln.ac.uk/home/socs/staffcontactlist/" target="_blank" rel="noopener">Staff List</a></p>
+                        <p><a href="https://socs.blogs.lincoln.ac.uk/" target="_blank" rel="noopener">Blog</a></p>
+                        <p><a href="https://lcas.lincoln.ac.uk/wp/" data-tooltip="L-CAS is the Lincoln Centre for Autonomous Systems Research (L-CAS), the University of Lincoln’s cross-disciplinary research group in robotics" target="_blank" rel="noopener">L-CAS</a></p>
+                        <p><a href="https://www.visioneng.org.uk/" data-tooltip="LoVE, led by Prof. Nigel Allinson, specialises in the capture, transmission, processing and understanding of image, video and other high-dimensional data" target="_blank" rel="noopener">LoVE</a></p>
+                        <p><a href="https://agriforwards-cdt.blogs.lincoln.ac.uk/about-us/" data-tooltip="AgriFoRwArdS is the EPSRC Centre for Doctoral Training in Agri-Food Rotics" target="_blank" rel="noopener">AgriFoRwArdS</a></p>
+                        <p><a href="http://intlab.co.uk" data-tooltip="Intlab is a Human-Computer Interaction (HCI) research group in the School of Computer Science at the University of Lincoln" target="_blank" rel="noopener">INTLAB</a></p>
+                        <p><a href="https://mlearn.lincoln.ac.uk" data-tooltip="University of Lincoln Machine Learning Group" target="_blank" rel="noopener">MLearn</a></p>
                     </div>
                 </div>
 
                 <div class="useful-link-column">
                         <h2 class="font-bold">Wellbeing</h2>
-                        <p><a href="https://lincolnsu.com/advice">SU Advice Centre</a></p>
-                        <p><a href="https://lincolnsu.com/advice/welfare">SU Wellbeing Advice</a></p>
-                        <p><a href="https://studentservices.lincoln.ac.uk/health-and-wellbeing/">UoL Student Services</a></p>
-                        <p><a href="https://studentservices.lincoln.ac.uk/health-and-wellbeing/workshops-podcasts-and-self-help-guides/workshops/">Wellbeing Workshops</a></p>
-                        <p><a href="https://www.ulhsonline.co.uk/">UoL Health Service</a></p>
-                        <p><a href="https://gateway.lincoln.ac.uk/">Absence Requests</a></p>
-                        <p><a href="https://lncn.ac/extcircs">Extenuating Circumstances</a></p>
+                        <p><a href="https://lincolnsu.com/advice" target="_blank" rel="noopener">SU Advice Centre</a></p>
+                        <p><a href="https://lincolnsu.com/advice/welfare" target="_blank" rel="noopener">SU Wellbeing Advice</a></p>
+                        <p><a href="https://studentservices.lincoln.ac.uk/health-and-wellbeing/" target="_blank" rel="noopener">UoL Student Services</a></p>
+                        <p><a href="https://studentservices.lincoln.ac.uk/health-and-wellbeing/workshops-podcasts-and-self-help-guides/workshops/" target="_blank" rel="noopener">Wellbeing Workshops</a></p>
+                        <p><a href="https://www.ulhsonline.co.uk/" target="_blank" rel="noopener">UoL Health Service</a></p>
+                        <p><a href="https://gateway.lincoln.ac.uk/" target="_blank" rel="noopener">Absence Requests</a></p>
+                        <p><a href="https://lncn.ac/extcircs" target="_blank" rel="noopener">Extenuating Circumstances</a></p>
                 </div>
 
                 <div class="useful-link-column">
                         <h2 class="font-bold">Learning Support</h2>
-                        <p><a href="https://guides.library.lincoln.ac.uk/mash">MASH</a></p>
-                        <p><a href="http://lncn.ac/lillogin">LinkedIn Learning</a></p>
-                        <p><a href="https://guides.library.lincoln.ac.uk/c.php?g=659753&p=4658128">Study Skills Workshops</a></p>
-                        <p><a href="https://guides.library.lincoln.ac.uk/learn/referencing">Harvard Referencing Guide</a></p>
+                        <p><a href="https://guides.library.lincoln.ac.uk/mash" target="_blank" rel="noopener">MASH</a></p>
+                        <p><a href="http://lncn.ac/lillogin" target="_blank" rel="noopener">LinkedIn Learning</a></p>
+                        <p><a href="https://guides.library.lincoln.ac.uk/c.php?g=659753&p=4658128" target="_blank" rel="noopener">Study Skills Workshops</a></p>
+                        <p><a href="https://guides.library.lincoln.ac.uk/learn/referencing" target="_blank" rel="noopener">Harvard Referencing Guide</a></p>
                 </div>
                 <div class="useful-link-column">
                         <h2 class="font-bold">Facilities</h2>
-                        <p><a href="https://www.lincoln.ac.uk/map/brayford.html">Campus Map</a></p>
-                        <p><a href="https://www.lincoln.ac.uk/map/index.html">Building Maps & Room Layouts</a></p>
-                        <p><a href="https://navigateme.lincoln.ac.uk">Navigate Me</a></p>
-                        <p><a href="https://lincolnsu.com/advice/housing">SU Housing Services</a></p>
-                        <p><a href="https://accommodation.lincoln.ac.uk/about-accommodation-services/">UoL Accommodation Services</a></p>
+                        <p><a href="https://www.lincoln.ac.uk/map/brayford.html" target="_blank" rel="noopener">Campus Map</a></p>
+                        <p><a href="https://www.lincoln.ac.uk/map/index.html" target="_blank" rel="noopener">Building Maps & Room Layouts</a></p>
+                        <p><a href="https://navigateme.lincoln.ac.uk" target="_blank" rel="noopener">Navigate Me</a></p>
+                        <p><a href="https://lincolnsu.com/advice/housing" target="_blank" rel="noopener">SU Housing Services</a></p>
+                        <p><a href="https://accommodation.lincoln.ac.uk/about-accommodation-services/" target="_blank" rel="noopener">UoL Accommodation Services</a></p>
                 </div>
                 <div class="useful-link-column ">
                         <h2 class="font-bold">Library</h2>
-                        <p><a href="https://guides.library.lincoln.ac.uk/about/study-spaces">Room Bookings</a></p>
-                        <p><a href="https://findapc.lincoln.ac.uk">Find A PC</a></p>
-                        <p><a href="https://library.lincoln.ac.uk/login?message=borrowerservices_notloggedin&referer=https%3A%2F%2Flibrary.lincoln.ac.uk%2Faccount">My Account</a></p>
-                        <p><a href="https://guides.library.lincoln.ac.uk/about/computers-printing">Check Your Print Balance</a></p>
-                        <p><a href="https://guides.library.lincoln.ac.uk/about">Library Guides</a></p>
-                        <p><a href="https://guides.library.lincoln.ac.uk/compsci">Games & Computing Resource</a></p>
-                        <p><a href="https://browzine.com/libraries/1254/subjects">Electronic Journals</a></p>
-                        <p><a href="https://dissertations.library.lincoln.ac.uk">Dissertation Showcase</a></p>
-                        <p><a href="https://lincoln.rl.talis.com/index.html">Reading Lists</a></p>
+                        <p><a href="https://guides.library.lincoln.ac.uk/about/study-spaces" target="_blank" rel="noopener">Room Bookings</a></p>
+                        <p><a href="https://findapc.lincoln.ac.uk" target="_blank" rel="noopener">Find A PC</a></p>
+                        <p><a href="https://library.lincoln.ac.uk/login?message=borrowerservices_notloggedin&referer=https%3A%2F%2Flibrary.lincoln.ac.uk%2Faccount" target="_blank" rel="noopener">My Account</a></p>
+                        <p><a href="https://guides.library.lincoln.ac.uk/about/computers-printing" target="_blank" rel="noopener">Check Your Print Balance</a></p>
+                        <p><a href="https://guides.library.lincoln.ac.uk/about" target="_blank" rel="noopener">Library Guides</a></p>
+                        <p><a href="https://guides.library.lincoln.ac.uk/compsci" target="_blank" rel="noopener">Games & Computing Resource</a></p>
+                        <p><a href="https://browzine.com/libraries/1254/subjects" target="_blank" rel="noopener">Electronic Journals</a></p>
+                        <p><a href="https://dissertations.library.lincoln.ac.uk" target="_blank" rel="noopener">Dissertation Showcase</a></p>
+                        <p><a href="https://lincoln.rl.talis.com/schools/2aj.html" target="_blank" rel="noopener">Reading Lists</a></p>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="w-full md:px-8 mt-8">
+    <div id="rep-team" class="w-full md:px-8 mt-8">
         <h1 class="section-header">The Rep Team</h1>
 
         <div class="flex flex-wrap">
@@ -168,16 +165,6 @@
                     <p>BSc Games Computing</p>
                     <p>19698544@students.lincoln.ac.uk</p>
                     <a href="mailto:19698544@students.lincoln.ac.uk" class="button"><i class="far fa-envelope"></i>&nbsp;Send Email</a>
-                </div>
-            </div>
-            <div class="rep-profile-column">
-                <div class="rep-profile-card">
-                    <img src="assets/brandon-dodds.jpg" alt="Brandon">
-                    <p class="name">Brandon-Lee Dodds<span class="year-3-tag">Year 3</span></p>
-                    <p>Course Rep</p>
-                    <p>BSc Computer Science</p>
-                    <p>19696909@students.lincoln.ac.uk</p>
-                    <a href="mailto:19696909@students.lincoln.ac.uk" class="button"><i class="far fa-envelope"></i>&nbsp;Send Email</a>
                 </div>
             </div>
             <div class="rep-profile-column">
@@ -207,7 +194,7 @@
                     <p>Are you interested?</p>
                     <p>We are always looking for new Reps!</p>
                     <p>Contact us for more information!</p>
-                    <a href="mailto:computingrep@lincolnsu.com" class="button"><i class="fa fa-at"></i>&nbsp;Contact Us</a>
+                    <a href="mailto:computingrep@lincolnsu.com" class="button"><i class="far fa-envelope"></i>&nbsp;Contact Us</a>
                 </div>
             </div>
         </div>
@@ -225,14 +212,12 @@
         </p>
 
         <img src="/assets/orgChart.svg" class="hidden md:block w-8/12 mx-auto" alt="test">
-        <a href="/assets/orgChart.png" class="block mx-auto w-max md:hidden button">Click here to see the SU Rep structure</a>
+        <a href="/assets/orgChart.svg" class="block mx-auto w-max md:hidden button">Click here to see the SU Rep structure</a>
     </div>
-
-    
 
 
     <!-- Community Links -->
-    <div class="w-full md:px-8" id="community-links">
+    <div class="w-full md:px-8 mt-8" id="community-links">
         <h3 class="section-header">Community</h3>
 
         <div class="flex items-center flex-row flex-wrap my-8 md:my-16 mx-auto">

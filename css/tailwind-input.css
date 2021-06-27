@@ -1,12 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+}
+
 .navbar-button {
-  @apply px-4 py-2 inline-block ml-2 hover:bg-red-100 rounded hover:no-underline;
+  @apply px-4 py-2 inline-block ml-2 hover:bg-red-600 hover:text-white hover:no-underline;
 }
 
 .vertical-nav-button {
-  @apply px-4 py-2 hover:bg-blue-300 hover:no-underline;
+  @apply px-4 py-2 hover:bg-red-600 hover:text-white transition-colors hover:no-underline first:border-t border-b;
 }
 
 .header-image {
@@ -44,7 +49,7 @@
 }
 
 .section-header {
-  @apply text-xl font-bold py-4 mb-4 border-b border-gray-200;
+  @apply text-xl font-bold py-4 mb-4 border-b border-gray-200 text-center;
 }
 
 .communication-item {
@@ -69,11 +74,11 @@
 }
 
 .rep-profile-card {
-  @apply py-2 border h-full hover:bg-gray-200 transition-colors;
+  @apply py-12 border h-full hover:bg-gray-200 transition-colors;
 }
 
 .rep-profile-card>img {
-  @apply lg:w-1/2 md:w-8/12 w-1/2 inline-block rounded-full mb-4;
+  @apply w-40 max-w-full inline-block rounded-full mb-4;
 }
 
 .rep-profile-card>p.name {
@@ -105,7 +110,7 @@
 }
 
 .useful-link-column {
-  @apply flex-1 mb-8;
+  @apply flex-1 mb-10;
   min-width: 50%;
 }
 

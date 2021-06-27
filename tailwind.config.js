@@ -8,7 +8,13 @@ module.exports = {
         extend: {},
     },
     variants: {
-        extend: {},
+        extend: {
+          borderColor: ['first'],
+          borderOpacity:  ['first'],
+          borderRadius:  ['first'],
+          borderStyle:  ['first'],
+          borderWidth:  ['first'],
+        }
     },
     plugins: [],
 }

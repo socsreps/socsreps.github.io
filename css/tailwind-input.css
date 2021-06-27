@@ -43,3 +43,23 @@
     padding: .7rem 1rem;
   }
   
+  .section-header {
+    @apply text-xl font-bold py-4 mb-4 border-b text-center;
+  }
+
+  .communication-item {
+    @apply flex-1 text-center;
+    min-width: 2em;
+  }
+
+  .communication-item a {
+    display: inline-block;
+  }
+
+  .communication-item a>img {
+    @apply inline-block w-1/2 rounded-full;
+  }
+
+  .communication-item p {
+    @apply hover:underline text-center;
+  }

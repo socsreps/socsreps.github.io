@@ -6,7 +6,8 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "watch": "npx tailwindcss -i css/tailwind-input.css -o css/tailwind-dist.css --watch",
-        "build": "set NODE_ENV=production&&npx tailwindcss -i css/tailwind-input.css -o css/tailwind-dist.css --minify"
+        "build-win": "set NODE_ENV=production&&npx tailwindcss -i css/tailwind-input.css -o css/tailwind-dist.css --minify",
+        "build-linux": "NODE_ENV=production npx tailwindcss -i css/tailwind-input.css -o css/tailwind-dist.css --minify"
     },
     "repository": {
         "type": "git",

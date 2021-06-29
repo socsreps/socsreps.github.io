@@ -22,6 +22,8 @@ const modalTemplate = Handlebars.compile(modalHTML);
 
 const feedbackEntries = document.getElementsByClassName("feedback-entry")
 
+const modalIds = []
+
 for (let index = 0; index < feedbackEntries.length; index++) {
     const entry = feedbackEntries[index];
 
@@ -30,11 +32,27 @@ for (let index = 0; index < feedbackEntries.length; index++) {
 
     const modalId = entry.getAttribute("data-modal-id");
 
+    modalIds.push(modalId);
+
     const modal = modalTemplate({ content: answerText, id: modalId });
 
     const modalsContainer = document.getElementById("modals");
 
     modalsContainer.innerHTML += modal;
+
+    entry.addEventListener("click", (node) => {
+        const modalElement = document.getElementById(modalId)
+        if (modalElement) {
+            modalElement.classList.remove("hidden")
+        }
+    })
+}
+
+let modalsContainer = document.getElementById("modals");
+
+for (let index = 0; index < modalIds.length; index++) {
+
+    const modalId = modalIds[index];
 
     document.getElementById(modalId).addEventListener("click", (e) => {
         const modalElement = document.getElementById(modalId)
@@ -46,7 +64,7 @@ for (let index = 0; index < feedbackEntries.length; index++) {
 
     document.getElementById(modalId).querySelector(".close-button").addEventListener("click", (e) => {
         const modalElement = document.getElementById(modalId)
-
+    
         if (modalElement) {
             modalElement.classList.add("hidden")
         }
@@ -55,14 +73,6 @@ for (let index = 0; index < feedbackEntries.length; index++) {
     modalsContainer.querySelector("#" + modalId + " .content").addEventListener("click", (e) => {
         e.stopPropagation();
     })
-
-    entry.addEventListener("click", (node) => {
-        const modalElement = document.getElementById(modalId)
-        if (modalElement) {
-            modalElement.classList.remove("hidden")
-        }
-    })
+   
 }
-
-
 

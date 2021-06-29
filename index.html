@@ -1,60 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>SoCS SU Reps</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
-<link rel="manifest" href="/assets/favicons/site.webmanifest">
-<link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
-<link rel="shortcut icon" href="/assets/favicons/favicon.ico">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="msapplication-config" content="/assets/favicons/browserconfig.xml">
-<meta name="theme-color" content="#ffffff">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/tailwind-dist.css">
-<script src="https://kit.fontawesome.com/1e65277c13.js"></script>
+  <head>
+    <title>SoCS SU Reps</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/assets/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/assets/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/tailwind-dist.css">
+    <script src="https://kit.fontawesome.com/1e65277c13.js"></script>
+  </head>
 
-<body>
-
+  <body>
     <div class="container mx-auto">
-        <!-- Navbar (sit on top) -->
-        <div>
-            <div class="w-full flex px-4 py-2 flex-row items-center md">
-                <a href="index.html" class="py-2 text-2xl hover:text-red-600 transition-colors"><span class="font-bold">SoCS</span>&nbsp;SU REPS</a>
-                <div class="flex-row items-center flex-1 flex text-lg ml-8">
-                    <div class="items-center hidden md:flex">
-                        <a href="blog.html" class="navbar-button">Blog</a>
-                        <a href="feedback.html" class="navbar-button">Feedback</a>
-                        <a href="faq.html" class="navbar-button">FAQ</a>
-                        <a href="index.html#rep-team" class="navbar-button">Contact Us</a>
-                    </div>
-                    <div class="flex items-center flex-1 justify-end">
-                        <div class="items-center hidden md:flex">
-                            <a href="https://twitter.com/UoL_SoCS" class="inline-block" style="text-decoration:none" target="_blank"><img src="assets/twitter-icon.svg" class="w-8">
-                            </a>
-                        </div>
-                        <!-- Mobile Menu Button -->
-                        <button class="md:hidden text-2xl" onclick="showVerticalNav()"><i class="fas fa-bars"></i></button>
-                    </div>
+      <div>
+          <div class="w-full flex px-4 py-2 flex-row items-center md">
+              <a href="." class="py-2 text-2xl hover:text-red-600 transition-colors"><span class="font-bold">SoCS</span>&nbsp;SU REPS</a>
+              <div class="flex-row items-center flex-1 flex text-lg ml-8">
+                  <div class="items-center hidden md:flex">
+                      <!-- BEGIN NAV ITEMS -->
+                      <a href="blog.html" class="navbar-button">Blog</a>
+                      <a href="feedback.html" class="navbar-button">Feedback</a>
+                      <a href="faq.html" class="navbar-button">FAQ</a>
+                      <a href="./#rep-team" class="navbar-button">Contact Us</a>
+                      <a href="archive.html" class="navbar-button">Archive</a>
+                      <!-- END NAV ITEMS -->
+                  </div>
+                  <div class="flex items-center flex-1 justify-end">
+                      <div class="items-center hidden md:flex">
+                          <a href="https://twitter.com/UoL_SoCS" class="inline-block" style="text-decoration:none" target="_blank"><img src="assets/twitter-icon.svg" class="w-8">
+                          </a>
+                      </div>
+                      <!-- Mobile Menu Button -->
+                      <button class="md:hidden text-2xl" onclick="showVerticalNav()"><i class="fas fa-bars"></i></button>
+                  </div>
 
-                </div>
+              </div>
 
-            </div>
-        </div>
+          </div>
+      </div>
 
         <!-- Burger menu on Small Screens - show when mobile menu button is clicked -->
         <div class="w-full hidden bg-opacity-25 left-0 top-0 mb-4 " id="vertical-nav">
             <div class="h-full flex flex-col">
+                <!-- BEGIN VERTICAL NAV ITEMS -->
                 <a class="vertical-nav-button" href="blog.html">Blog</a>
                 <a class="vertical-nav-button" href="feedback.html">Feedback</a>
                 <a class="vertical-nav-button" href="faq.html">FAQ</a>
                 <a class="vertical-nav-button" href="index.html#rep-team">Contact Us</a>
+                <a class="vertical-nav-button" href="archive.html">Archive</a>
+                <!-- END VERTICAL NAV ITEMS -->
             </div>
         </div>
     </div>
-    
+      
     <div class="container px-4 md:p-0 mx-auto">
 
         <!-- Header -->
@@ -269,11 +275,11 @@
 
     <!-- Footer -->
     <footer class="w-full text-center py-5 border-t mt-8">
-            <a href="https://github.com/socsreps/socsreps.github.io" class="no-underline inline-block" target="_blank"><img src="assets/github-logo.svg" class="rounded-full hover:bg-gray-200 w-12 max-w-none"/>
-            </a>
+      <a href="https://github.com/socsreps/socsreps.github.io" class="no-underline inline-block" target="_blank"><img src="assets/github-logo.svg" class="rounded-full hover:bg-gray-200 w-12 max-w-none"/>
+      </a>
     </footer>
 
     <script src="js/common.js"></script>
 
-</body>
+  </body>
 </html>

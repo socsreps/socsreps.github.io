@@ -6,7 +6,7 @@ const modalHTML = `
                 <div class="flex items-center justify-center min-h-full h-auto">
                     <div class="flex-1 container">
                         <div class="content m-8 px-8 pb-8 max-w-screen-md mx-2 lg:mx-auto bg-white">
-                            <div class="text-right w-full pt-4">
+                            <div class="text-right w-full pt-6">
                                 <i class="close-button text-lg text-gray-500 hover:text-gray-700 cursor-pointer fas fa-times"></i>
                             </div>
                             {{{ content }}}

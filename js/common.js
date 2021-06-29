@@ -23,7 +23,7 @@ function getSiblings(e) {
     return siblings;
 };
 
-document.querySelectorAll("*[data-tab-container][data-tab-target]").forEach(node => {
+document.querySelectorAll("*[data-tooltip]").forEach(node => {
     const el = document.createElement("span")
     el.innerText = node.getAttribute('data-tooltip');
     el.classList = "tooltip"
@@ -36,7 +36,7 @@ document.querySelectorAll("*[data-tab-container][data-tab-target]").forEach(node
     })
 })
 
-document.querySelectorAll("*[data-tab-container]").forEach(node => {
+document.querySelectorAll("*[data-tab-container][data-tab-target]").forEach(node => {
     const tabContainerId = node.getAttribute("data-tab-container")
     const tabTargetId = node.getAttribute("data-tab-target")
     node.addEventListener("click", (e) => {

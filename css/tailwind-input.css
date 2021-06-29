@@ -109,6 +109,10 @@
   @apply bg-yellow-400 text-sm px-2 rounded-full font-normal whitespace-nowrap;
 }
 
+.text-tag {
+  @apply text-sm px-2 rounded-full font-normal whitespace-nowrap;
+}
+
 .useful-link-column {
   @apply flex-1 mb-10;
   min-width: 50%;

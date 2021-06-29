@@ -146,5 +146,5 @@ p {
 }
 
 .active-tab {
-  @apply text-red-600 font-bold  border-red-600;
+  @apply text-red-600 font-semibold border-red-600;
 } 

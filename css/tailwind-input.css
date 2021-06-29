@@ -147,4 +147,8 @@ p {
 
 .active-tab {
   @apply text-red-600 font-semibold border-red-600;
-} 
+}
+
+.feedback-entry {
+  @apply flex-col md:flex-row px-8 py-2 flex items-center first:border-t border-b hover:bg-gray-200 cursor-pointer;
+}

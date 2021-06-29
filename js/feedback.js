@@ -25,7 +25,7 @@ const feedbackEntries = document.getElementsByClassName("feedback-entry")
 for (let index = 0; index < feedbackEntries.length; index++) {
     const entry = feedbackEntries[index];
 
-    const answer = entry.querySelector("feedback-answer");
+    const answer = entry.querySelector(".answer-content");
     const answerText = answer ? answer.innerHTML : "<p class=\"px-4 py-2 text-lg\">No answer!</p>";
 
     const modalId = entry.getAttribute("data-modal-id");

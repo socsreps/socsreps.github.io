@@ -27,7 +27,7 @@ function handleTabSwitch(tabElement) {
     const tabContainerId = tabElement.getAttribute("data-tab-container")
     const tabTargetId = tabElement.getAttribute("data-tab-target")
     const container = document.getElementById(tabContainerId);
-    window.location.hash = "#" + tabTargetId
+    window.history.replaceState({}, '', "#" + tabTargetId)
     tabElement.classList.replace("inactive-tab", "active-tab")
     getSiblings(tabElement).forEach(sibling => sibling.classList.replace("active-tab", "inactive-tab"))
     if (container) {

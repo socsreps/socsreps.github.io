@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<title>Reps Blog</title>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="icon" type="image/gif/png" href="../../assets/favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../css/blog.css">
+<link rel="stylesheet" href="../../css/style.css">
+
+<style>
+
+</style>
+</head>
+<body>
+
+  <!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-wide w3-padding">
+    <a href="../../index.html" class="w3-bar-item w3-button"><b>SoCS </b> SU REPS</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="../../blog.html" class="w3-bar-item w3-button">Blog</a>
+      <a href="../../feedback.html" class="w3-bar-item w3-button">Feedback</a>
+      <a href="../../faq.html" class="w3-bar-item w3-button">FAQ</a>
+      <a href="../../index.html#about" class="w3-bar-item w3-button">Contact Us</a>
+    </div>
+
+<!-- Burger menu on Small Screens - only shows when screen gets less than 600px-->
+  <button class="dropbtn" onclick="myFunction()">MENU</button>
+    <div class="dropdown-content" id="myDropdown">
+      <div class="w3-right">
+      <a href="../../blog.html">Blog</a>
+      <a href="../../feedback.html">Feedback</a>
+      <a href="../../faq.html">FAQ</a>
+      <a href="../../index.html#about">Contact Us</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="w3-center max-width w3-padding-16" style="background-color: orange; font-weight: bold;">
+  This page belongs to the 2020/2021 archive!<br/>
+  To see the up to date website, <a href="/">click here</a>
+</div>
+
+
+
+
+
+<!-- Amend the title to suit your blog) -->
+
+<div class="w3-content w3-padding" style="max-width:1564px">
+  <div class="w3-container w3-padding-32" id="projects">		    
+    <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">SoCS Questions &amp; Answers</h2>   
+  </div>
+</div>
+
+
+<!-- Add you blog date, author and blog text. Remember to add any blog images to the assets folder and correctly link them -->
+
+<div class="card">
+
+  <h4>By Garry Clawson</h4> 
+
+  <h5 style="color:grey">September 29, 2020</h5> 
+
+    <p>There has been a lot happening behind the scenes at the School of Computer Science over the last 6 months, but also across the College of Science in general. It can be hard to make sure everyone keeps up to date or knows what the latest info is. With that in mind, myself, <a href="https://staff.lincoln.ac.uk/daa59075-c37c-4a18-a529-ead1acfcf512" target="_blank">Chris Headleand</a>, Director of Teaching and Learning for the School of Computer Science and <a href="https://staff.lincoln.ac.uk/d49a8e50-b321-48b7-9c33-3ad880bd18d6" target="_blank">Derek Foster</a>, who has just recently moved into a new role of developing industry certifications across the school (these are great, make sure you do them!) and was previously the Programme Lead for Computer Science, all sat together for what is hopefully the first of many recorded discussion on all things SoCS that may be useful to present and new students.</p>  
+
+    <p>The forums are always a great way to share information and thanks to Derek and Chris for taking the time to answer and provide their thoughtful feedback. If you have some time, take a look, and also feel free to get in touch and let us know of anything you want discussed. No concern or idea is too small.</p>
+
+    <iframe width="100%" height="500" src="https://www.youtube-nocookie.com/embed/7wXeEhxmuFI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    
+    <h3>Contact Us</h3>
+
+    <p>Remember, we are here to help. If you are not having the experience you want then please reach out and let us know. You can contact any one of us through our <b><a href="../../index.html#about">email links</a></b> or anonymously using our <b><a href="../../feedback.html">Feedback page</a></b>. All emails are received in the strictest of confidence. No concern or idea is too small.  </p>
+
+</div>
+
+
+
+
+
+<!-- Footer -->
+<footer class="w3-center w3-padding-5">
+  <p><a href="https://github.com/socsreps/socsreps.github.io" style="text-decoration:none" target="_blank"><img src="../../assets/github-clear.png" style="width:50px;"></img></a></p>
+</footer>
+
+</body>
+
+<script type="text/javascript">
+ 
+// Enables the burger menu button and populates it with the links 
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+
+</script>
+

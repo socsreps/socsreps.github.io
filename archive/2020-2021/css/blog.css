@@ -1,0 +1,146 @@
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+
+  max-width: 1200px; 
+  margin: 0 auto !important; 
+  float: none !important;
+
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  border-radius: 5px;
+  font-size: 12px;
+  text-align: center;
+  background: white;
+}
+
+/* Blog image max height*/
+.orgChart {
+  border-radius: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+}
+
+
+/* Blog image max height*/
+.image {
+  border-radius: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+}
+
+/* Blog image auto height and centered*/
+.popblogimage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  border-color: #f1f1f1;
+  border-bottom-style: solid;
+  border-top-style: solid;
+  border-width: thin;
+}
+
+/* Blog image auto hieght and centered*/
+.blogimage {
+  border-radius: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+}
+
+/* Add a card effect for articles as well as all styles in the blogs*/
+.card {
+   background-color: white;
+   border-radius: 5px;
+   padding-top: 50px;
+   padding-bottom: 50px;
+   padding-left: 150px;
+   padding-right: 150px;
+   margin-left: 40px;
+   margin-right: 40px;
+   margin-bottom: 40px;
+}
+
+/* Add a card effect for articles */
+.faq {
+   border-radius: 5px;
+   margin-top: 20px;
+   margin-left: 50px;
+   margin-right: 50px;
+}
+
+.links {
+   background-color: white;
+   border-radius: 5px;
+   line-height: 1.5;
+   font-size: 15px;
+   padding: 5px;
+   margin-top: 20px;
+   margin-left: 50px;
+   margin-right: 50px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+
+  .card {
+   padding: 10px;
+   margin-left: 10px;
+   margin-right: 10px;
+  }
+
+  .faq {
+   margin-left: 10px;
+   margin-right: 10px;
+  }
+
+  .links {
+   margin-left: 10px;
+   margin-right: 10px;
+  }
+
+}
+

@@ -98,15 +98,15 @@
 }
 
 .year-3-tag {
-  @apply bg-indigo-500 text-white text-sm px-2 rounded-full ml-2 font-normal;
+  @apply bg-indigo-500 text-white text-sm px-2 rounded-full font-normal whitespace-nowrap;
 }
 
 .year-2-tag {
-  @apply bg-green-400 text-sm px-2 rounded-full ml-2 font-normal;
+  @apply bg-green-400 text-sm px-2 rounded-full font-normal whitespace-nowrap;
 }
 
 .year-1-tag {
-  @apply bg-yellow-400 text-sm px-2 rounded-full ml-2 font-normal;
+  @apply bg-yellow-400 text-sm px-2 rounded-full font-normal whitespace-nowrap;
 }
 
 .useful-link-column {

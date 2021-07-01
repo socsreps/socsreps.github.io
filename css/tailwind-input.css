@@ -161,7 +161,31 @@ body {
   @apply bg-red-50;
 }
 
-.post-content p {
+.post-container {
+  @apply w-full lg:w-8/12 mx-auto;
+}
+
+.post-title {
+  @apply text-2xl border-b pb-4 mt-8 mb-4;
+}
+
+.post-meta {
+  @apply mb-6;
+}
+
+.post-meta-author {
+  @apply text-lg mb-1;
+}
+
+.post-meta-data {
+  @apply text-sm text-gray-600;
+}
+
+.post-content {
+  @apply bg-white px-16 py-10;
+}
+
+.post-text p {
   @apply mb-4 mx-auto;
   max-width: 80ch;
 }

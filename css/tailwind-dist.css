@@ -33532,44 +33532,58 @@ body {
 .post-container {
   margin-left: auto;
   margin-right: auto;
+  margin-top: 2rem;
   width: 100%;
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 @media (min-width: 1024px) {
   .post-container {
-    width: 66.666667%;
+    width: 58.333333%;
   }
 }
 
 .post-title {
-  margin-top: 2rem;
   margin-bottom: 1rem;
-  border-bottom-width: 1px;
   padding-bottom: 1rem;
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 600;
 }
 
 .post-meta {
   margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.post-meta-author-image {
+  margin-right: 1rem;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 9999px;
 }
 
 .post-meta-author {
   margin-bottom: 0.25rem;
   font-size: 1.125rem;
   line-height: 1.75rem;
+  font-weight: 600;
 }
 
 .post-meta-data {
   font-size: 0.875rem;
   line-height: 1.25rem;
   --tw-text-opacity: 1;
-  color: rgba(75, 85, 99, var(--tw-text-opacity));
+  color: rgba(55, 65, 81, var(--tw-text-opacity));
 }
 
 .post-content {
-  --tw-bg-opacity: 1;
-  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
   padding-left: 4rem;
   padding-right: 4rem;
   padding-top: 2.5rem;
@@ -33580,7 +33594,8 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1rem;
-  max-width: 80ch;
+  --tw-text-opacity: 1;
+  color: rgba(31, 41, 55, var(--tw-text-opacity));
 }
 
 .blog-post-card {

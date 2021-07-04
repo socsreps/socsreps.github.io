@@ -218,11 +218,11 @@ body {
 }
 
 .collapsible-header {
-  @apply transition-all flex items-center justify-between mb-4;
+  @apply transition-all flex items-center justify-between;
 }
 
 .expanded .collapsible-header {
-  @apply font-semibold;
+  @apply font-semibold mb-4;
 }
 
 .collapsible-content {
@@ -233,11 +233,11 @@ body {
 }
 
 .collapsible-icon {
-  @apply transition-colors rounded-full border w-8 h-8 flex items-center justify-center;
+  @apply transition-colors text-2xl flex items-center justify-center;
 }
 
 .expanded .collapsible-icon {
-  @apply bg-red-600 text-white;
+  @apply text-red-600;
 }
 
 .collapsible-icon i {

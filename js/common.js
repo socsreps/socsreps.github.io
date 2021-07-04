@@ -62,10 +62,23 @@ function handleTabSwitch(tabElement) {
         })
     })
 
-    document.querySelectorAll(".collapsible .collapsible-heading").forEach(node => {
+    document.querySelectorAll(".collapsible-container").forEach(node => {
+        let content = node.querySelector(".collapsible-content");
+        content.addEventListener("click", e => {
+            e.stopPropagation();
+        })
         node.addEventListener("click", e => {
-            e.target.parentNode.classList.toggle("active");
-            var content = e.target.nextElementSibling;
+            node.classList.toggle("expanded");
+            let collapseGroup = node.getAttribute("data-collapse-group");
+            if (collapseGroup) {
+                let groupMembers = document.querySelectorAll("[data-collapse-group=\"" + collapseGroup + "\"]");
+                groupMembers.forEach(groupMember => {
+                    if (groupMember !== node) {
+                        groupMember.classList.remove("expanded");
+                        groupMember.querySelector(".collapsible-content").style.maxHeight = null;
+                    }
+                })
+            }
             if (content.style.maxHeight) {
                 content.style.maxHeight = null;
             } else {

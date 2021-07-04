@@ -97,20 +97,28 @@
   @apply px-4 py-2 text-white bg-red-600 hover:bg-red-700 transition-colors;
 }
 
+.text-tag {
+  @apply text-sm px-2 rounded-full font-normal whitespace-nowrap;
+}
+
+.year-all-tag {
+  @apply text-tag bg-gray-300;
+}
+
+.year-msc-tag {
+  @apply text-tag bg-blue-400;
+}
+
 .year-3-tag {
-  @apply bg-indigo-500 text-white text-sm px-2 rounded-full font-normal whitespace-nowrap;
+  @apply text-tag bg-indigo-400;
 }
 
 .year-2-tag {
-  @apply bg-green-400 text-sm px-2 rounded-full font-normal whitespace-nowrap;
+  @apply text-tag bg-green-400;
 }
 
 .year-1-tag {
-  @apply bg-yellow-400 text-sm px-2 rounded-full font-normal whitespace-nowrap;
-}
-
-.text-tag {
-  @apply text-sm px-2 rounded-full font-normal whitespace-nowrap;
+  @apply text-tag bg-yellow-400;
 }
 
 .useful-link-column {

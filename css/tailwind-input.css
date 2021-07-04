@@ -206,7 +206,11 @@ body {
 }
 
 .collapsible-container {
-  @apply transition-colors border-b cursor-pointer bg-red-100 hover:bg-red-50;
+  @apply transition-colors border-b border-red-300 cursor-pointer bg-red-100 hover:bg-red-50 mb-4;
+}
+
+.collapsible-container.expanded {
+  @apply border-0;
 }
 
 .collapsible-inner {
@@ -233,7 +237,7 @@ body {
 }
 
 .collapsible-icon {
-  @apply transition-colors text-2xl flex items-center justify-center;
+  @apply text-2xl flex items-center justify-center ml-2 md:ml-0;
 }
 
 .expanded .collapsible-icon {

@@ -23,11 +23,29 @@ function getSiblings(e) {
     return siblings;
 };
 
+// Src: https://stackoverflow.com/a/53929685
+// Updates a query param on the page without reloading the page. 
+function insertUrlParam(key, value) {
+    if (history.pushState) {
+        let searchParams = new URLSearchParams(window.location.search);
+        if (value === null) {
+            searchParams.delete(key);
+        } else {
+            searchParams.set(key, value);
+        }
+        let newurl = window.location.protocol + "//" + window.location.host + window.location.pathname;
+        if (searchParams.toString()) {
+            newurl +=  '?' + searchParams.toString();
+        }
+        window.history.replaceState({path: newurl}, '', newurl);
+    }
+}
+
 function handleTabSwitch(tabElement) {
     const tabContainerId = tabElement.getAttribute("data-tab-container")
     const tabTargetId = tabElement.getAttribute("data-tab-target")
     const container = document.getElementById(tabContainerId);
-    window.history.replaceState({}, '', "#" + tabTargetId)
+    insertUrlParam("tab_id", tabTargetId);
     tabElement.classList.replace("inactive-tab", "active-tab")
     getSiblings(tabElement).forEach(sibling => sibling.classList.replace("active-tab", "inactive-tab"))
     if (container) {
@@ -68,29 +86,51 @@ function handleTabSwitch(tabElement) {
             e.stopPropagation();
         })
         node.addEventListener("click", e => {
-            node.classList.toggle("expanded");
-            let collapseGroup = node.getAttribute("data-collapse-group");
-            if (collapseGroup) {
-                let groupMembers = document.querySelectorAll("[data-collapse-group=\"" + collapseGroup + "\"]");
-                groupMembers.forEach(groupMember => {
-                    if (groupMember !== node) {
-                        groupMember.classList.remove("expanded");
-                        groupMember.querySelector(".collapsible-content").style.maxHeight = null;
-                    }
-                })
-            }
-            if (content.style.maxHeight) {
-                content.style.maxHeight = null;
-            } else {
-                content.style.maxHeight = content.scrollHeight + "px";
-            }
+            handleCollapse(node, !node.classList.contains("expanded"), false);
         })
     })
 
-    if (window.location.hash) {
-        let tabSection = document.querySelector("*[data-tab-container][data-tab-target=" + window.location.hash.slice(1) + "]")
+    function handleCollapse(collapse, expand, group) {
+        let content = collapse.querySelector(".collapsible-content");
+        if (expand) {
+            collapse.classList.add("expanded")
+            content.style.maxHeight = content.scrollHeight + "px";
+            insertUrlParam("collapse_id", collapse.id || null);
+
+            let collapseGroup = collapse.getAttribute("data-collapse-group");
+            if (collapseGroup) {
+                let groupMembers = document.querySelectorAll("[data-collapse-group=\"" + collapseGroup + "\"]");
+                groupMembers.forEach(groupMember => {
+                    if (groupMember !== collapse) {
+                        handleCollapse(groupMember, false, true);
+                    }
+                })
+            }
+        } else {
+            collapse.classList.remove("expanded")
+            content.style.maxHeight = null;
+
+            if (!group) {
+                insertUrlParam("collapse_id", null);
+            }
+
+        }
+    }
+
+    let queryParams = new URLSearchParams(window.location.search);
+
+    if (queryParams.get("tab_id")) {
+        let tabSection = document.querySelector("*[data-tab-container][data-tab-target=" + queryParams.get("tab_id") + "]")
         if (tabSection) {
             handleTabSwitch(tabSection)
         }
     }
+
+    if (queryParams.get("collapse_id")) {
+        let collapse = document.querySelector("#" + queryParams.get("collapse_id") + ".collapsible-container");
+        if (collapse) {
+            handleCollapse(collapse, true, false)
+        }
+    }
+
 })();

@@ -206,7 +206,7 @@ body {
 }
 
 .collapsible-container {
-  @apply border-b cursor-pointer hover:bg-gray-100;
+  @apply transition-colors border-b cursor-pointer bg-red-100 hover:bg-red-50;
 }
 
 .collapsible-inner {

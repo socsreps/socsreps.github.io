@@ -166,7 +166,7 @@ p {
 }
 
 body {
-  @apply bg-red-50;
+  @apply bg-gray-50;
 }
 
 .post-container {
